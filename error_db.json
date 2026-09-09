@@ -1,0 +1,2132 @@
+{
+  "ArithmeticError": ["Арифметическая ошибка", "Проверь математику в выражении."],
+  "AssertionError": ["Assert провалился", "Условие в assert() оказалось ложным."],
+  "AttributeError": ["Атрибут не найден", "Посмотри dir(объект) — такого поля/метода нет."],
+  "BlockingIOError": ["IO заблокирован", "Файл/сокет в неблокирующем режиме, данных нет."],
+  "BrokenPipeError": ["Канал разорван", "Читатель закрыл трубу/сокет, а ты ещё пишешь."],
+  "BufferError": ["Ошибка буфера", "Буфер переполнен или недоступен."],
+  "BytesWarning": ["Предупреждение bytes/str", "Смешиваешь bytes и str — включи -bb для поиска."],
+  "ChildProcessError": ["Дочерний процесс упал", "subprocess вернул ненулевой код или умер."],
+  "ConnectionAbortedError": ["Соединение прервано", "Вторая сторона сбросила коннект."],
+  "ConnectionError": ["Ошибка соединения", "Сеть/сокет отвалились."],
+  "ConnectionRefusedError": ["В соединении отказано", "Порт закрыт или сервис не слушает."],
+  "ConnectionResetError": ["Соединение сброшено", "Remote side сделал RST."],
+  "DeprecationWarning": ["Устаревший API", "Фича будет удалена — мигрируй."],
+  "EOFError": ["Конец файла", "input()/read() уперлись в EOF."],
+  "EnvironmentError": ["Системная ошибка", "Базовый класс для OS/IO ошибок."],
+  "Exception": ["Общее исключение", "Лови конкретные типы, а не Exception."],
+  "FileExistsError": ["Файл уже есть", "os.mkdir упал — проверь exist_ok=True."],
+  "FileNotFoundError": ["Файл не найден", "Пути нет. Проверь os.path.exists."],
+  "FloatingPointError": ["Ошибка float", "Математика с плавающей точкой сломалась."],
+  "FutureWarning": ["Будущее изменение", "Поведение изменится в следующей версии."],
+  "GeneratorExit": ["Генератор закрыт", "Не глотай — дай генератору завершиться."],
+  "IOError": ["Ошибка ввода-вывода", "Диск/файл/сеть подвели."],
+  "ImportError": ["Импорт не удался", "Модуль есть, но атрибут/подмодуль не грузится."],
+  "ImportWarning": ["Предупреждение импорта", "Проблема в sys.path или __init__.py."],
+  "IndentationError": ["Кривые отступы", "Смешал пробелы и табы или сдвинул блок."],
+  "IndexError": ["Индекс вне диапазона", "Список короче, чем индекс, который ты просишь."],
+  "InterruptedError": ["Прервано сигналом", "syscall прервали — обычно retry."],
+  "IsADirectoryError": ["Это директория", "Пытаешься открыть папку как файл."],
+  "KeyError": ["Ключа нет в словаре", "Используй dict.get() или проверь in."],
+  "KeyboardInterrupt": ["Ctrl+C", "Юзер прервал. Выходи cleanly."],
+  "LookupError": ["Ключ/индекс не найден", "Базовый для KeyError и IndexError."],
+  "MemoryError": ["Память кончилась", "Жрёшь слишком много. Утечка или огромный объект."],
+  "ModuleNotFoundError": ["Модуль не найден", "pip install <имя>. Проверь venv."],
+  "NameError": ["Имя не определено", "Опечатка или забыл импорнуть/объявить."],
+  "NotADirectoryError": ["Не директория", "Пытаешься пройти в файл как в папку."],
+  "NotImplementedError": ["Не реализовано", "Абстрактный метод — переопредели в наследнике."],
+  "OSError": ["Системная ошибка", "errno подскажет точнее."],
+  "OverflowError": ["Переполнение", "Число слишком большое для C-типа."],
+  "PendingDeprecationWarning": ["Скоро устареет", "Пока работает, но готовься."],
+  "PermissionError": ["Нет прав", "chmod/chown или запускай от нужного юзера."],
+  "ProcessLookupError": ["Процесса нет", "PID мёртв, а ты шлёшь сигнал."],
+  "RecursionError": ["Рекурсия бесконечная", "База рекурсии не срабатывает — лови цикл."],
+  "ReferenceError": ["Слабая ссылка мертва", "weakref объект уже собран garbage collector'ом."],
+  "ResourceWarning": ["Ресурс не закрыт", "Файл/сокет завис. Используй with."],
+  "RuntimeError": ["Ошибка выполнения", "Общая — смотри сообщение внутри."],
+  "RuntimeWarning": ["Предупреждение в рантайме", "Подозрительное поведение в рантайме."],
+  "StopAsyncIteration": ["Асинхронный итератор кончился", "Нормальный конец __anext__."],
+  "StopIteration": ["Итератор кончился", "Нормальный конец next()."],
+  "SyntaxError": ["Синтаксис сломан", "Скобки/двоеточия/отступы — смотри на ^ в ошибке."],
+  "SystemError": ["Внутренняя ошибка Python", "Баг интерпретатора или C-расширения."],
+  "SystemExit": ["sys.exit() вызван", "Не лови без нужды — это штатный выход."],
+  "TabError": ["Табы и пробелы вместе", "Настрой IDE: один таб = 4 пробела, без микса."],
+  "TimeoutError": ["Таймаут", "Сеть/функция не успела. Увеличь timeout."],
+  "TypeError": ["Не тот тип", "Передаёшь str туда, где ждут int. Проверь type()."],
+  "UnboundLocalError": ["Локальная переменная до присвоения", "Добавь global/nonlocal или инициализируй."],
+  "UnicodeDecodeError": ["Не декодится", "Файл не в той кодировке. Укажи encoding='utf-8'."],
+  "UnicodeEncodeError": ["Не кодируется", "Символ не лезет в целевую кодировку."],
+  "UnicodeError": ["Общая Unicode-ошибка", "См. Decode/Encode для деталей."],
+  "UnicodeTranslateError": ["Ошибка трансляции", "codec не знает такой символ."],
+  "UnicodeWarning": ["Предупреждение Unicode", "Автоматическое декодирование дало сбой."],
+  "UserWarning": ["Предупреждение от юзера", "warnings.warn() — твоя собственная заметка."],
+  "ValueError": ["Значение не подходит", "Тип верный, но содержимое нет (int('abc'))."],
+  "Warning": ["Базовое предупреждение", "Не краш, но стоит глянуть."],
+  "ZeroDivisionError": ["Деление на ноль", "Проверь делитель перед / или //."],
+
+  "socket.error": ["Сокет-ошибка", "Смотри errno для деталей."],
+  "socket.herror": ["Ошибка resolve", "DNS не смог разобрать хост."],
+  "socket.gaierror": ["getaddrinfo failed", "Хост не резолвится. Проверь DNS/имя."],
+  "socket.timeout": ["Сокет тайманул", "settimeout() сработал — сеть медленная или хост мёртв."],
+
+  "ssl.SSLError": ["SSL/TLS ошибка", "Сертификат/протокол не подошли."],
+  "ssl.SSLCertVerificationError": ["Сертификат не прошёл", "Цепочка невалидна или истекла."],
+  "ssl.SSLZeroReturnError": ["SSL вернул 0", "Соединение закрыто корректно, но неожиданно."],
+  "ssl.SSLWantReadError": ["SSL ждёт чтения", "Неблокирующий сокет — повтори позже."],
+  "ssl.SSLWantWriteError": ["SSL ждёт записи", "Неблокирующий сокет — повтори позже."],
+  "ssl.SSLSyscallError": ["SSL syscall упал", "Низкоуровневая ошибка OpenSSL."],
+  "ssl.SSLEOFError": ["SSL неожиданный EOF", "Собеседник закрыл TLS без shutdown."],
+
+  "http.client.HTTPException": ["HTTP клиент упал", "Проблема с HTTP-сессией."],
+  "http.client.NotConnected": ["HTTP не подключён", "connect() не вызван перед request()."],
+  "http.client.InvalidURL": ["Неверный URL", "Путь не начинается с / или битый."],
+  "http.client.CannotSendRequest": ["Нельзя отправить запрос", "Предыдущий ответ не прочитан."],
+  "http.client.CannotSendHeader": ["Нельзя отправить заголовки", "Тело уже ушло."],
+  "http.client.ResponseNotReady": ["Ответ не готов", "request() не сделан или не закончен."],
+  "http.client.BadStatusLine": ["Кривой статус", "Сервер вернул не HTTP."],
+  "http.client.RemoteDisconnected": ["Remote отвалился", "Сервер закрыл keep-alive."],
+
+  "urllib.error.URLError": ["URL ошибка", "Сеть/DNS/прокси подвели."],
+  "urllib.error.HTTPError": ["HTTP ошибка", "Статус 4xx/5xx. Смотри code и reason."],
+  "urllib.error.ContentTooShortError": ["Контент оборвался", "Скачал меньше, чем Content-Length."],
+
+  "json.JSONDecodeError": ["JSON не парсится", "Битая строка. Проверь jsonlint."],
+  "csv.Error": ["CSV ошибка", "Разделители/экранирование сломаны."],
+  "pickle.PickleError": ["Pickle сломан", "Объект несериализуем."],
+  "pickle.PicklingError": ["Не пиклится", "Объект не поддерживает сериализацию."],
+  "pickle.UnpicklingError": ["Не анпиклится", "Битый поток или чужой протокол."],
+  "shelve.ShelfError": ["Shelf упал", "Проблема с полкой dbm."],
+
+  "xml.parsers.expat.ExpatError": ["XML не парсится", "Битый XML. Проверь валидатором."],
+  "xml.etree.ElementTree.ParseError": ["ElementTree parse error", "Тег не закрыт или атрибут битый."],
+  "xml.sax.SAXException": ["SAX ошибка", "Общая ошибка SAX-парсера."],
+  "xml.sax.SAXParseException": ["SAX parse error", "Конкретная строка XML кривая."],
+
+  "html.parser.HTMLParseError": ["HTML parse error", "Устарело, но если видишь — HTML битый."],
+
+  "email.errors.MessageError": ["Email сообщение кривое", "MIME-структура нарушена."],
+  "email.errors.MIMEException": ["MIME ошибка", "Заголовки/границы сломаны."],
+  "email.errors.HeaderParseError": ["Заголовок не парсится", "Кодировка или формат заголовка битые."],
+  "email.errors.BoundaryError": ["MIME boundary error", "Границы multipart не совпадают."],
+
+  "logging.LogException": ["Логгер упал", "Обычно в handler'е — смотри traceback."],
+
+  "argparse.ArgumentError": ["Аргумент CLI кривой", "Неверное значение флага."],
+  "argparse.ArgumentTypeError": ["Тип аргумента не тот", "Функция type= вернула ошибку."],
+
+  "getopt.GetoptError": ["getopt ошибка", "Неизвестный флаг или нет значения."],
+  "optparse.OptionError": ["optparse ошибка", "Конфликт опций."],
+
+  "configparser.Error": ["ConfigParser ошибка", "INI-файл битый."],
+  "configparser.NoSectionError": ["Секции нет", "Добавь [section] в конфиг."],
+  "configparser.NoOptionError": ["Опции нет в секции", "Проверь имя ключа."],
+  "configparser.DuplicateSectionError": ["Дубликат секции", "Две одинаковые [секции]."],
+  "configparser.ParsingError": ["Config parse error", "Синтаксис INI нарушен."],
+
+  "sqlite3.Warning": ["SQLite предупреждение", "Нештатная ситуация, но не краш."],
+  "sqlite3.Error": ["SQLite ошибка", "Общая ошибка БД."],
+  "sqlite3.DatabaseError": ["БД повреждена", "Файл .sqlite битый или заблокирован."],
+  "sqlite3.IntegrityError": ["Целостность нарушена", "UNIQUE/FOREIGN KEY провалились."],
+  "sqlite3.ProgrammingError": ["Кривой SQL", "Синтаксис или порядок вызовов API."],
+  "sqlite3.OperationalError": ["SQLite operational", "БД locked / таблица не найдена."],
+  "sqlite3.NotSupportedError": ["Фича не поддерживается", "SQLite такое не умеет."],
+  "sqlite3.DataError": ["Данные не подходят", "Тип не лезет в колонку."],
+  "sqlite3.InterfaceError": ["sqlite3 interface", "Connection/cursor в неверном состоянии."],
+  "sqlite3.InternalError": ["Внутренняя ошибка sqlite3", "Баг драйвера."],
+
+  "asyncio.CancelledError": ["Задача отменена", "task.cancel() сработал. Нормально."],
+  "asyncio.InvalidStateError": ["Future в неверном состоянии", "result() до set_result()."],
+  "asyncio.TimeoutError": ["asyncio таймаут", "wait_for() не дождался."],
+  "asyncio.IncompleteReadError": ["Недочитано", "StreamReader получил меньше, чем ждал."],
+  "asyncio.LimitOverrunError": ["Лимит чтения превышен", "readuntil() нашёл больше, чем limit."],
+  "asyncio.SendfileNotAvailableError": ["sendfile недоступен", "Сокет/файл не подходят."],
+
+  "concurrent.futures.CancelledError": ["Future отменён", "future.cancel() сработал."],
+  "concurrent.futures.InvalidStateError": ["Future в неверном состоянии", "Двойной set_result()."],
+  "concurrent.futures.BrokenExecutor": ["Пул сломан", "Воркер упал, пул мёртв."],
+  "concurrent.futures.process.BrokenProcessPool": ["ProcessPool мёртв", "Воркер убит OOM или crash."],
+  "concurrent.futures.thread.BrokenThreadPool": ["ThreadPool мёртв", "Все воркеры отвалились."],
+
+  "multiprocessing.ProcessError": ["Процесс упал", "Ошибка spawn/fork."],
+  "multiprocessing.BufferTooShort": ["Буфер мал", "Pipe/Queue не влезли."],
+  "multiprocessing.TimeoutError": ["Процесс тайманул", "join(timeout) / get(timeout)."],
+  "multiprocessing.AuthenticationError": ["Auth между процессами", "challenge/response не совпал."],
+  "multiprocessing.TimeoutError": ["multiprocessing timeout", "Операция не успела."],
+
+  "queue.Empty": ["Очередь пуста", "get_nowait() или get(timeout) истёк."],
+  "queue.Full": ["Очередь полна", "put_nowait() или put(timeout) истёк."],
+
+  "contextlib.redirect_error": ["redirect stderr упал", "Внутри with что-то сломало sys.stderr."],
+
+  "typing.TypeVarError": ["TypeVar кривой", "Неверные bounds/constraints."],
+  "typing.ForwardRefError": ["ForwardRef не резолвится", "Строка-тип не импортирована."],
+
+  "dataclasses.FrozenInstanceError": ["Датакласс заморожен", "frozen=True, менять нельзя."],
+  "dataclasses.InitVarError": ["InitVar ошибка", "InitVar вне __init__."],
+
+  "enum.EnumError": ["Enum ошибка", "Неверное значение для enum."],
+
+  "copy.Error": ["copy упал", "Объект не копируется."],
+  "copy.RegistrationError": ["copy registration", "Повторная регистрация __reduce__."],
+
+  "pprint.PrettyPrinterError": ["pprint упал", "Рекурсивный объект без repr."],
+
+  "difflib.DifferError": ["Differ упал", "Кривые входные последовательности."],
+
+  "textwrap.TextWrapError": ["textwrap упал", "Редко, но бывает на битых строках."],
+
+  "string.TemplateError": ["Template кривой", "Незакрытый $placeholder."],
+
+  "io.UnsupportedOperation": ["Операция не поддерживается", "read() на write-only файле."],
+  "io.BlockingIOError": ["Блокирующий IO", "Неблокирующий файл, а ты ждёшь."],
+
+  "gzip.BadGzipFile": ["Gzip битый", "Файл не gzip или обрезан."],
+  "zipfile.BadZipFile": ["Zip битый", "Архив повреждён."],
+  "zipfile.LargeZipFile": ["Zip слишком большой", "Нужен ZIP64."],
+  "tarfile.TarError": ["Tar ошибка", "Архив битый."],
+  "tarfile.ReadError": ["Tar read error", "Не удаётся прочитать заголовок."],
+  "tarfile.CompressionError": ["Tar compression error", "Неподдерживаемое сжатие."],
+  "tarfile.StreamError": ["Tar stream error", "Нельзя seek в потоковом tar."],
+  "tarfile.SubsequentHeaderError": ["Tar subsequent header", "Кривой pax-заголовок."],
+
+  "shutil.Error": ["shutil ошибка", "copytree/move упали."],
+  "shutil.SameFileError": ["Файл тот же", "src == dst в copy2."],
+  "shutil.Error": ["shutil copy error", "Один из файлов недоступен."],
+
+  "glob.GlobError": ["glob ошибка", "Сбой при обходе (редко)."],
+  "fnmatch.FnMatchError": ["fnmatch ошибка", "Битый паттерн (крайне редко)."],
+
+  "tempfile.TemporaryDirectoryError": ["TempDir упал", "Не удалось удалить временную папку."],
+
+  "glob.glob": ["glob пуст", "Не ошибка, но файлов по маске нет."],
+
+  "pathlib.UnsupportedOperation": ["pathlib не поддерживает", "Операция недоступна на этой ОС."],
+
+  "os.error": ["os.error", "Алиас OSError."],
+
+  "fcntl.flock": ["flock упал", "Блокировка файла не удалась."],
+
+  "select.error": ["select error", "Алиас OSError."],
+
+  "mmap.error": ["mmap упал", "Не удалось отмапить файл."],
+
+  "ctypes.ArgumentError": ["ctypes аргумент", "Неверный тип в C-функцию."],
+  "ctypes.COMError": ["COM ошибка", "Windows COM/OLE упал."],
+
+  "winreg.error": ["Реестр Windows", "Ключ не найден или нет прав."],
+
+  "msvcrt.error": ["msvcrt ошибка", "Windows CRT упал."],
+
+  "subprocess.SubprocessError": ["subprocess упал", "Общая ошибка запуска."],
+  "subprocess.TimeoutExpired": ["subprocess timeout", "process.wait(timeout) истёк."],
+  "subprocess.CalledProcessError": ["subprocess вернул код", "returncode != 0."],
+
+  "pty.error": ["pty упал", "Не удалось открыть псевдотерминал."],
+
+  "curses.error": ["curses упал", "ncurses-функция вернула ERR."],
+
+  "tkinter.TclError": ["Tcl ошибка", "Tkinter-виджет/команда кривые."],
+  "tkinter.TkinterError": ["Tkinter ошибка", "Общая ошибка Tk."],
+
+  "turtle.TurtleGraphicsError": ["Turtle ошибка", "Неверное направление/перо."],
+
+  "readline.error": ["readline упал", "Ошибка инициализации readline."],
+
+  "cProfile.ProfileError": ["cProfile ошибка", "Профайлер не смог."],
+
+  "bdb.BdbError": ["Отладчик bdb", "Команда отладки кривая."],
+
+  "pdb.PdbError": ["pdb ошибка", "Команда pdb кривая."],
+
+  "unittest.SkipTest": ["Тест пропущен", "Не ошибка, а штатный skip."],
+
+  "doctest.DocTestFailure": ["Doctest провалился", "Пример в docstring не совпал."],
+  "doctest.UnexpectedException": ["Doctest неожиданное исключение", "Пример упал с другой ошибкой."],
+
+  "pydoc.ErrorDuringImport": ["pydoc импорт упал", "Не удалось импорнуть для документации."],
+
+  "site.SiteError": ["site.py ошибка", "Кривой .pth или пользовательский site."],
+
+  "distutils.errors.DistutilsError": ["distutils ошибка", "setup.py упал."],
+  "setuptools.errors.SetuptoolsError": ["setuptools ошибка", "setup() кривой."],
+
+  "pip.exceptions.PipError": ["pip ошибка", "Общая ошибка pip."],
+  "pip.exceptions.InstallationError": ["pip install упал", "Зависимости или сборка."],
+  "pip.exceptions.DistributionNotFound": ["Пакет не найден", "Нет нужной версии на PyPI."],
+  "pip.exceptions.RequirementError": ["requirements.txt кривой", "Синтаксис зависимостей."],
+
+  "requests.RequestException": ["requests упал", "Общая ошибка HTTP-клиента."],
+  "requests.ConnectionError": ["requests Connection", "Сеть/DNS/прокси."],
+  "requests.HTTPError": ["requests HTTP", "response.raise_for_status() на 4xx/5xx."],
+  "requests.URLRequired": ["URL не задан", "Нет url в request()."],
+  "requests.TooManyRedirects": ["Слишком много редиректов", "Цикл 302."],
+  "requests.ConnectTimeout": ["requests connect timeout", "Не смог подключиться за timeout."],
+  "requests.ReadTimeout": ["requests read timeout", "Сервер не отвечает на чтение."],
+  "requests.Timeout": ["requests timeout", "Любой таймаут."],
+  "requests.ProxyError": ["Прокси упал", "Прокси не отвечает или auth неверный."],
+  "requests.SSLError": ["requests SSL", "Сертификат/протокол."],
+  "requests.InvalidURL": ["Неверный URL", "Схема/хост битые."],
+  "requests.InvalidHeader": ["Неверный заголовок", "Заголовок содержит запрещённые символы."],
+  "requests.InvalidSchema": ["Неверная схема", "Не http/https."],
+  "requests.InvalidProxyURL": ["Неверный прокси URL", "Прокси кривой."],
+  "requests.ChunkedEncodingError": ["Chunked encoding", "Сервер оборвал chunked-ответ."],
+  "requests.ContentDecodingError": ["Content decoding", "gzip/deflate не декодятся."],
+  "requests.StreamConsumedError": ["Стрим уже прочитан", "response.content после iter_content."],
+  "requests.RetryError": ["Retry исчерпан", "urllib3 не смог после N попыток."],
+  "requests.UnrewindableBodyError": ["Тело не перемотать", "Нельзя повторить request с этим body."],
+  "requests.JSONDecodeError": ["requests JSON", "response.json() на не-JSON."],
+
+  "urllib3.exceptions.HTTPError": ["urllib3 HTTP", "Общая ошибка."],
+  "urllib3.exceptions.PoolError": ["urllib3 Pool", "ConnectionPool упал."],
+  "urllib3.exceptions.TimeoutError": ["urllib3 timeout", "Таймаут соединения."],
+  "urllib3.exceptions.MaxRetryError": ["urllib3 MaxRetry", "Повторы исчерпаны."],
+  "urllib3.exceptions.SSLError": ["urllib3 SSL", "SSL/TLS проблема."],
+  "urllib3.exceptions.ProxyError": ["urllib3 Proxy", "Прокси отвалился."],
+  "urllib3.exceptions.DecodeError": ["urllib3 Decode", "Декодирование ответа."],
+  "urllib3.exceptions.ProtocolError": ["urllib3 Protocol", "HTTP-протокол сломан."],
+
+  "aiohttp.ClientError": ["aiohttp Client", "Общая ошибка клиента."],
+  "aiohttp.ClientConnectionError": ["aiohttp Connection", "Соединение не установилось."],
+  "aiohttp.ClientConnectorError": ["aiohttp Connector", "Транспорт упал."],
+  "aiohttp.ClientSSLError": ["aiohttp SSL", "Сертификат/протокол."],
+  "aiohttp.ClientResponseError": ["aiohttp Response", "Плохой статус ответа."],
+  "aiohttp.ClientHttpProxyError": ["aiohttp Proxy", "Прокси вернул ошибку."],
+  "aiohttp.ClientPayloadError": ["aiohttp Payload", "Тело ответа битое."],
+  "aiohttp.ServerDisconnectedError": ["aiohttp Server disconnected", "Сервер сбросил."],
+  "aiohttp.ServerTimeoutError": ["aiohttp Server timeout", "Сервер не ответил."],
+  "aiohttp.TooManyRedirects": ["aiohttp редиректы", "Цикл 3xx."],
+  "aiohttp.InvalidURL": ["aiohttp URL", "Кривой URL."],
+  "aiohttp.InvalidHeader": ["aiohttp Header", "Кривой заголовок."],
+  "aiohttp.WSServerHandshakeError": ["aiohttp WS handshake", "WebSocket upgrade не прошёл."],
+  "aiohttp.ClientProxyConnectionError": ["aiohttp Proxy connection", "Прокси не пустил."],
+
+  "httpx.HTTPError": ["httpx ошибка", "Общая ошибка."],
+  "httpx.RequestError": ["httpx Request", "Ошибка на уровне запроса."],
+  "httpx.TransportError": ["httpx Transport", "Транспорт упал."],
+  "httpx.TimeoutException": ["httpx Timeout", "Таймаут."],
+  "httpx.ConnectTimeout": ["httpx ConnectTimeout", "Не подключился."],
+  "httpx.ReadTimeout": ["httpx ReadTimeout", "Не прочитал."],
+  "httpx.WriteTimeout": ["httpx WriteTimeout", "Не записал."],
+  "httpx.PoolTimeout": ["httpx PoolTimeout", "Нет свободного соединения в пуле."],
+  "httpx.ProxyError": ["httpx Proxy", "Прокси упал."],
+  "httpx.ProtocolError": ["httpx Protocol", "HTTP-протокол сломан."],
+  "httpx.LocalProtocolError": ["httpx LocalProtocol", "Ты отправил что-то не то."],
+  "httpx.RemoteProtocolError": ["httpx RemoteProtocol", "Сервер нарушил протокол."],
+  "httpx.HTTPStatusError": ["httpx Status", "4xx/5xx."],
+  "httpx.InvalidURL": ["httpx URL", "Кривой URL."],
+  "httpx.CookieConflict": ["httpx Cookie", "Конфликт cookie."],
+  "httpx.StreamError": ["httpx Stream", "Стриминг ответа сломался."],
+  "httpx.StreamConsumed": ["httpx Stream consumed", "Стрим уже прочитан."],
+
+  "fastapi.exceptions.RequestValidationError": ["FastAPI валидация", "Pydantic не принял body/query."],
+  "fastapi.exceptions.HTTPException": ["FastAPI HTTP", "raise HTTPException()."],
+  "fastapi.exceptions.WebSocketException": ["FastAPI WS", "WebSocket ошибка."],
+  "fastapi.exceptions.ResponseValidationError": ["FastAPI response", "Ответ не прошёл схему."],
+
+  "pydantic.ValidationError": ["Pydantic валидация", "Модель не прошла схему. Смотри .errors()."],
+  "pydantic.PydanticValueError": ["Pydantic значение", "Конкретное поле невалидно."],
+  "pydantic.PydanticTypeError": ["Pydantic тип", "Неверный тип поля."],
+  "pydantic.PydanticUserError": ["Pydantic юзер", "Неправильно используешь API Pydantic."],
+  "pydantic.PydanticSchemaGenerationError": ["Pydantic схема", "Не смог собрать схему модели."],
+  "pydantic.ConfigError": ["Pydantic Config", "Кривой class Config."],
+
+  "starlette.exceptions.HTTPException": ["Starlette HTTP", "HTTP-исключение."],
+  "starlette.websockets.WebSocketDisconnect": ["Starlette WS disconnect", "Клиент отвалился от WS."],
+  "starlette.routing.NoMatchFound": ["Starlette роут", "URL не нашёл хендлер."],
+
+  "flask.Flask.errorhandler": ["Flask errorhandler", "Не ошибка, регистрация."],
+  "werkzeug.exceptions.HTTPException": ["Werkzeug HTTP", "Базовый HTTP-исключение."],
+  "werkzeug.exceptions.BadRequest": ["Werkzeug 400", "Плохой запрос."],
+  "werkzeug.exceptions.Unauthorized": ["Werkzeug 401", "Не авторизован."],
+  "werkzeug.exceptions.Forbidden": ["Werkzeug 403", "Запрещено."],
+  "werkzeug.exceptions.NotFound": ["Werkzeug 404", "Не найдено."],
+  "werkzeug.exceptions.MethodNotAllowed": ["Werkzeug 405", "Метод не разрешён."],
+  "werkzeug.exceptions.InternalServerError": ["Werkzeug 500", "Внутренняя ошибка сервера."],
+  "werkzeug.exceptions.ServiceUnavailable": ["Werkzeug 503", "Сервис недоступен."],
+  "werkzeug.routing.BuildError": ["Werkzeug url_for", "Не смог построить URL."],
+  "werkzeug.routing.RequestRedirect": ["Werkzeug redirect", "url с / на без/или наоборот."],
+  "werkzeug.routing.WebsocketMismatch": ["Werkzeug WS mismatch", "HTTP-запрос на WS-роут."],
+  "werkzeug.security.Unauthorized": ["Werkzeug security", "Auth не прошёл."],
+  "werkzeug.exceptions.Gone": ["Werkzeug 410", "Ресурс удалён навсегда."],
+  "werkzeug.exceptions.RequestEntityTooLarge": ["Werkzeug 413", "Тело слишком большое."],
+  "werkzeug.exceptions.RequestURITooLarge": ["Werkzeug 414", "URL слишком длинный."],
+  "werkzeug.exceptions.UnsupportedMediaType": ["Werkzeug 415", "Content-Type не тот."],
+  "werkzeug.exceptions.RequestedRangeNotSatisfiable": ["Werkzeug 416", "Range битый."],
+  "werkzeug.exceptions.ExpectationFailed": ["Werkzeug 417", "Expectation не выполнена."],
+  "werkzeug.exceptions.ImATeapot": ["Werkzeug 418", "Я чайник."],
+  "werkzeug.exceptions.MisdirectedRequest": ["Werkzeug 421", "Запрос не сюда."],
+  "werkzeug.exceptions.UnprocessableEntity": ["Werkzeug 422", "Семантически неверно."],
+  "werkzeug.exceptions.Locked": ["Werkzeug 423", "Ресурс заблокирован."],
+  "werkzeug.exceptions.FailedDependency": ["Werkzeug 424", "Зависимость не выполнена."],
+  "werkzeug.exceptions.PreconditionRequired": ["Werkzeug 428", "Нужен If-Match."],
+  "werkzeug.exceptions.TooManyRequests": ["Werkzeug 429", "Флуд-контроль."],
+  "werkzeug.exceptions.RequestHeaderFieldsTooLarge": ["Werkzeug 431", "Заголовки огромные."],
+  "werkzeug.exceptions.UnavailableForLegalReasons": ["Werkzeug 451", "Юридические причины."],
+  "werkzeug.exceptions.NotImplemented": ["Werkzeug 501", "Не реализовано."],
+  "werkzeug.exceptions.BadGateway": ["Werkzeug 502", "Плохой gateway."],
+  "werkzeug.exceptions.GatewayTimeout": ["Werkzeug 504", "Gateway тайманул."],
+  "werkzeug.exceptions.HTTPVersionNotSupported": ["Werkzeug 505", "HTTP-версия не та."],
+
+  "django.core.exceptions.AppRegistryNotReady": ["Django apps", "Модели грузятся до ready()."],
+  "django.core.exceptions.FieldError": ["Django поле", "Неверное имя поля в query."],
+  "django.core.exceptions.ImproperlyConfigured": ["Django конфиг", "settings.py кривой."],
+  "django.core.exceptions.ObjectDoesNotExist": ["Django объект", "Model.objects.get() не нашёл."],
+  "django.core.exceptions.MultipleObjectsReturned": ["Django много объектов", "get() нашёл >1."],
+  "django.core.exceptions.PermissionDenied": ["Django permission", "403."],
+  "django.core.exceptions.SuspiciousOperation": ["Django подозрительно", "CSRF/подделка запроса."],
+  "django.core.exceptions.ValidationError": ["Django валидация", "Form/Model не прошли."],
+  "django.core.exceptions.DisallowedHost": ["Django host", "Host не в ALLOWED_HOSTS."],
+  "django.core.exceptions.EmptyResultSet": ["Django пустой результат", "Query не вернёт ничего."],
+  "django.core.exceptions.FieldDoesNotExist": ["Django поле отсутствует", "Model._meta.get_field() упал."],
+  "django.core.exceptions.ViewDoesNotExist": ["Django view", "urls.py указывает на несуществующий view."],
+  "django.core.exceptions.MiddlewareNotUsed": ["Django middleware", "Middleware отключён."],
+  "django.core.exceptions.SuspiciousFileOperation": ["Django файл", "Путь за пределами MEDIA_ROOT."],
+  "django.core.exceptions.BadRequest": ["Django 400", "Плохой запрос."],
+  "django.db.Error": ["Django DB", "Общая ошибка БД."],
+  "django.db.InterfaceError": ["Django DB interface", "Connection/cursor кривые."],
+  "django.db.DatabaseError": ["Django Database", "БД упала."],
+  "django.db.DataError": ["Django Data", "Данные не лезут в колонку."],
+  "django.db.OperationalError": ["Django Operational", "БД locked / таблица не найдена."],
+  "django.db.IntegrityError": ["Django Integrity", "UNIQUE/NOT NULL/FK нарушены."],
+  "django.db.InternalError": ["Django Internal", "Внутренняя ошибка БД."],
+  "django.db.ProgrammingError": ["Django Programming", "Кривой SQL или ORM-запрос."],
+  "django.db.NotSupportedError": ["Django NotSupported", "БД такое не умеет."],
+  "django.db.transaction.TransactionManagementError": ["Django transaction", "Атомарность нарушена."],
+  "django.http.Http404": ["Django 404", "raise Http404()."],
+  "django.http.PermissionDenied": ["Django PermissionDenied", "403."],
+  "django.http.BadHeaderError": ["Django BadHeader", "Заголовок содержит \\n."],
+  "django.http.UnreadablePostError": ["Django UnreadablePost", "Тело запроса не прочесть."],
+  "django.http.RawPostDataException": ["Django RawPostData", "request.body после request.POST."],
+  "django.template.TemplateSyntaxError": ["Django template", "Тег/фильтр кривые."],
+  "django.template.TemplateDoesNotExist": ["Django template not found", "Файл шаблона не найден."],
+  "django.template.TemplateNotAllowed": ["Django template not allowed", "Шаблон вне разрешённых dirs."],
+  "django.urls.NoReverseMatch": ["Django reverse", "reverse() не нашёл URL."],
+  "django.urls.Resolver404": ["Django resolver", "URL не нашёл view."],
+  "django.forms.ValidationError": ["Django forms", "Form не прошла валидацию."],
+  "django.contrib.auth.exceptions.PermissionDenied": ["Django auth", "Нет прав."],
+  "django.contrib.admin.exceptions.AlreadyRegistered": ["Django admin", "Model уже зарегистрирована."],
+  "django.contrib.admin.exceptions.NotRegistered": ["Django admin", "Model не зарегистрирована."],
+  "django.contrib.admin.exceptions.SiteNotRegistered": ["Django admin site", "AdminSite не в apps."],
+
+  "sqlalchemy.exc.SQLAlchemyError": ["SQLAlchemy ошибка", "Общая ошибка."],
+  "sqlalchemy.exc.ArgumentError": ["SQLAlchemy аргумент", "Кривые параметры."],
+  "sqlalchemy.exc.TimeoutError": ["SQLAlchemy timeout", "Pool timeout."],
+  "sqlalchemy.exc.AuthenticationError": ["SQLAlchemy auth", "Неверные креды БД."],
+  "sqlalchemy.exc.InvalidRequestError": ["SQLAlchemy invalid request", "Неправильное использование API."],
+  "sqlalchemy.exc.NoSuchModuleError": ["SQLAlchemy модуль", "Драйвер БД не найден."],
+  "sqlalchemy.exc.ResourceClosedError": ["SQLAlchemy resource", "Connection уже закрыт."],
+  "sqlalchemy.exc.DisconnectionError": ["SQLAlchemy disconnect", "БД отвалилась."],
+  "sqlalchemy.exc.InterfaceError": ["SQLAlchemy interface", "Cursor/Connection кривые."],
+  "sqlalchemy.exc.DataError": ["SQLAlchemy data", "Данные не лезут."],
+  "sqlalchemy.exc.DatabaseError": ["SQLAlchemy database", "БД упала."],
+  "sqlalchemy.exc.OperationalError": ["SQLAlchemy operational", "БД locked / нет таблицы."],
+  "sqlalchemy.exc.IntegrityError": ["SQLAlchemy integrity", "UNIQUE/NOT NULL/FK."],
+  "sqlalchemy.exc.InternalError": ["SQLAlchemy internal", "Внутренняя ошибка БД."],
+  "sqlalchemy.exc.ProgrammingError": ["SQLAlchemy programming", "Кривой SQL."],
+  "sqlalchemy.exc.NotSupportedError": ["SQLAlchemy not supported", "БД не умеет."],
+  "sqlalchemy.exc.PendingRollbackError": ["SQLAlchemy rollback", "Нужен rollback перед работой."],
+  "sqlalchemy.exc.StatementError": ["SQLAlchemy statement", "Параметры не подставились."],
+
+  "alembic.util.exc.CommandError": ["Alembic команда", "alembic CLI упал."],
+  "alembic.util.exc.AutogenerateDiffsDetected": ["Alembic diffs", "Миграции расходятся с моделями."],
+
+  "psycopg2.Error": ["psycopg2 ошибка", "Общая ошибка PostgreSQL."],
+  "psycopg2.Warning": ["psycopg2 предупреждение", "Нештатно, но не краш."],
+  "psycopg2.InterfaceError": ["psycopg2 interface", "Connection/cursor кривые."],
+  "psycopg2.DatabaseError": ["psycopg2 database", "БД упала."],
+  "psycopg2.DataError": ["psycopg2 data", "Данные не лезут."],
+  "psycopg2.OperationalError": ["psycopg2 operational", "БД недоступна / locked."],
+  "psycopg2.IntegrityError": ["psycopg2 integrity", "UNIQUE/NOT NULL/FK."],
+  "psycopg2.InternalError": ["psycopg2 internal", "Внутренняя ошибка PG."],
+  "psycopg2.ProgrammingError": ["psycopg2 programming", "Кривой SQL."],
+  "psycopg2.NotSupportedError": ["psycopg2 not supported", "PG не умеет."],
+  "psycopg2.errors.InFailedSqlTransaction": ["psycopg2 failed tx", "Query после ошибки в транзакции."],
+  "psycopg2.errors.UniqueViolation": ["psycopg2 unique", "UNIQUE нарушен."],
+  "psycopg2.errors.ForeignKeyViolation": ["psycopg2 fk", "FOREIGN KEY нарушен."],
+  "psycopg2.errors.NotNullViolation": ["psycopg2 not null", "NOT NULL нарушен."],
+  "psycopg2.errors.CheckViolation": ["psycopg2 check", "CHECK нарушен."],
+  "psycopg2.errors.SerializationFailure": ["psycopg2 serialization", "Конфликт транзакций."],
+  "psycopg2.errors.DeadlockDetected": ["psycopg2 deadlock", "Дедлок в БД."],
+  "psycopg2.errors.LockNotAvailable": ["psycopg2 lock", "Блокировка недоступна."],
+
+  "aiopg.Warning": ["aiopg warning", "Предупреждение."],
+  "aiopg.Error": ["aiopg error", "Общая ошибка."],
+  "aiopg.InterfaceError": ["aiopg interface", "Connection кривой."],
+  "aiopg.DatabaseError": ["aiopg database", "БД упала."],
+  "aiopg.DataError": ["aiopg data", "Данные не лезут."],
+  "aiopg.OperationalError": ["aiopg operational", "БД недоступна."],
+  "aiopg.IntegrityError": ["aiopg integrity", "UNIQUE/NOT NULL/FK."],
+  "aiopg.InternalError": ["aiopg internal", "Внутренняя ошибка."],
+  "aiopg.ProgrammingError": ["aiopg programming", "Кривой SQL."],
+  "aiopg.NotSupportedError": ["aiopg not supported", "PG не умеет."],
+
+  "asyncpg.exceptions.PostgresError": ["asyncpg PG", "Общая ошибка PostgreSQL."],
+  "asyncpg.exceptions.InterfaceError": ["asyncpg interface", "Connection кривой."],
+  "asyncpg.exceptions.PostgresConnectionError": ["asyncpg connection", "Не подключился."],
+  "asyncpg.exceptions.CannotConnectNowError": ["asyncpg cannot connect", "БД не готова."],
+  "asyncpg.exceptions.ConnectionDoesNotExistError": ["asyncpg no conn", "Connection уже мёртв."],
+  "asyncpg.exceptions.ConnectionFailureError": ["asyncpg conn fail", "Соединение упало."],
+  "asyncpg.exceptions.InFailedSQLTransactionError": ["asyncpg failed tx", "Query после ошибки в tx."],
+  "asyncpg.exceptions.UniqueViolationError": ["asyncpg unique", "UNIQUE нарушен."],
+  "asyncpg.exceptions.ForeignKeyViolationError": ["asyncpg fk", "FOREIGN KEY."],
+  "asyncpg.exceptions.NotNullViolationError": ["asyncpg not null", "NOT NULL."],
+  "asyncpg.exceptions.CheckViolationError": ["asyncpg check", "CHECK."],
+  "asyncpg.exceptions.SerializationFailureError": ["asyncpg serialization", "Конфликт tx."],
+  "asyncpg.exceptions.DeadlockDetectedError": ["asyncpg deadlock", "Дедлок."],
+  "asyncpg.exceptions.SyntaxOrAccessError": ["asyncpg syntax", "Кривой SQL."],
+  "asyncpg.exceptions.UndefinedTableError": ["asyncpg no table", "Таблицы нет."],
+  "asyncpg.exceptions.UndefinedColumnError": ["asyncpg no column", "Колонки нет."],
+  "asyncpg.exceptions.InvalidTextRepresentationError": ["asyncpg text repr", "Тип не тот."],
+  "asyncpg.exceptions.CharacterNotInRepertoireError": ["asyncpg charset", "Символ не в кодировке."],
+  "asyncpg.exceptions.DivisionByZeroError": ["asyncpg /0", "Деление на ноль в SQL."],
+  "asyncpg.exceptions.DatetimeFieldOverflowError": ["asyncpg datetime", "Дата вне диапазона."],
+  "asyncpg.exceptions.QueryCanceledError": ["asyncpg query canceled", "statement_timeout."],
+  "asyncpg.exceptions.AdminShutdownError": ["asyncpg admin shutdown", "PG выключают."],
+  "asyncpg.exceptions.CrashShutdownError": ["asyncpg crash shutdown", "PG упал."],
+  "asyncpg.exceptions.IOError": ["asyncpg io", "Сеть/диск."],
+  "asyncpg.exceptions.UndefinedObjectError": ["asyncpg undefined", "Объект не найден."],
+  "asyncpg.exceptions.ObjectNotInPrerequisiteStateError": ["asyncpg state", "Объект не готов."],
+  "asyncpg.exceptions.ProgramLimitExceededError": ["asyncpg limit", "Превышен лимит PG."],
+  "asyncpg.exceptions.InsufficientResourcesError": ["asyncpg resources", "Не хватает ресурсов PG."],
+  "asyncpg.exceptions.OperatorInterventionError": ["asyncpg operator", "Вмешательство админа."],
+  "asyncpg.exceptions.SystemError_": ["asyncpg system", "Системная ошибка PG."],
+  "asyncpg.exceptions.UnclassifiedError": ["asyncpg unclassified", "Непонятная ошибка."],
+
+  "aiomysql.Error": ["aiomysql ошибка", "Общая ошибка MySQL."],
+  "aiomysql.Warning": ["aiomysql предупреждение", "Нештатно."],
+  "aiomysql.InterfaceError": ["aiomysql interface", "Connection кривой."],
+  "aiomysql.DatabaseError": ["aiomysql database", "БД упала."],
+  "aiomysql.DataError": ["aiomysql data", "Данные не лезут."],
+  "aiomysql.OperationalError": ["aiomysql operational", "БД недоступна."],
+  "aiomysql.IntegrityError": ["aiomysql integrity", "UNIQUE/NOT NULL/FOREIGN KEY."],
+  "aiomysql.InternalError": ["aiomysql internal", "Внутренняя ошибка MySQL."],
+  "aiomysql.ProgrammingError": ["aiomysql programming", "Кривой SQL."],
+  "aiomysql.NotSupportedError": ["aiomysql not supported", "MySQL не умеет."],
+
+  "pymysql.err.Error": ["pymysql ошибка", "Общая ошибка."],
+  "pymysql.err.Warning": ["pymysql предупреждение", "Нештатно."],
+  "pymysql.err.InterfaceError": ["pymysql interface", "Connection кривой."],
+  "pymysql.err.DatabaseError": ["pymysql database", "БД упала."],
+  "pymysql.err.DataError": ["pymysql data", "Данные не лезут."],
+  "pymysql.err.OperationalError": ["pymysql operational", "БД недоступна."],
+  "pymysql.err.IntegrityError": ["pymysql integrity", "UNIQUE/NOT NULL/FOREIGN KEY."],
+  "pymysql.err.InternalError": ["pymysql internal", "Внутренняя ошибка."],
+  "pymysql.err.ProgrammingError": ["pymysql programming", "Кривой SQL."],
+  "pymysql.err.NotSupportedError": ["pymysql not supported", "MySQL не умеет."],
+
+  "motor.motor_asyncio.AsyncIOMotorError": ["motor ошибка", "Общая ошибка MongoDB."],
+  "pymongo.errors.PyMongoError": ["pymongo ошибка", "Общая ошибка."],
+  "pymongo.errors.ConnectionFailure": ["pymongo connection", "Не подключился к Mongo."],
+  "pymongo.errors.AutoReconnect": ["pymongo reconnect", "Переподключение."],
+  "pymongo.errors.ConfigurationError": ["pymongo config", "Кривой конфиг."],
+  "pymongo.errors.BulkWriteError": ["pymongo bulk", "Массовая запись упала."],
+  "pymongo.errors.CursorNotFound": ["pymongo cursor", "Курсор истёк на сервере."],
+  "pymongo.errors.DocumentTooLarge": ["pymongo doc large", "Документ > 16MB."],
+  "pymongo.errors.DuplicateKeyError": ["pymongo dup key", "UNIQUE индекс нарушен."],
+  "pymongo.errors.ExecutionTimeout": ["pymongo exec timeout", "Операция тайманула."],
+  "pymongo.errors.InvalidName": ["pymongo invalid name", "Имя коллекции/БД кривое."],
+  "pymongo.errors.InvalidOperation": ["pymongo invalid op", "Операция вне контекста."],
+  "pymongo.errors.InvalidURI": ["pymongo invalid uri", "MongoDB URI кривой."],
+  "pymongo.errors.NetworkTimeout": ["pymongo network timeout", "Сеть тайманула."],
+  "pymongo.errors.NotPrimaryError": ["pymongo not primary", "Запись не на primary."],
+  "pymongo.errors.OperationFailure": ["pymongo op failure", "Операция отклонена."],
+  "pymongo.errors.ServerSelectionTimeoutError": ["pymongo server selection", "Не нашёл живой сервер."],
+  "pymongo.errors.WriteError": ["pymongo write", "Запись не удалась."],
+  "pymongo.errors.WTimeoutError": ["pymongo wtimeout", "Write concern тайманул."],
+
+  "redis.RedisError": ["redis ошибка", "Общая ошибка."],
+  "redis.ConnectionError": ["redis connection", "Не подключился."],
+  "redis.TimeoutError": ["redis timeout", "Таймаут."],
+  "redis.AuthenticationError": ["redis auth", "Неверный пароль."],
+  "redis.BusyLoadingError": ["redis loading", "Redis ещё грузит RDB."],
+  "redis.ChildDeadlockError": ["redis deadlock", "Дедлок в fork."],
+  "redis.DataError": ["redis data", "Данные не подходят."],
+  "redis.InvalidResponse": ["redis response", "Ответ не парсится."],
+  "redis.LockError": ["redis lock", "Блокировка не удалась."],
+  "redis.LockNotOwnedError": ["redis lock not owned", "Блокировка чужая."],
+  "redis.ReadOnlyError": ["redis readonly", "Реплика, запись запрещена."],
+  "redis.ResponseError": ["redis response error", "Redis вернул ERR."],
+  "redis.WatchError": ["redis watch", "WATCH ключ изменился."],
+  "redis.NoScriptError": ["redis noscript", "EVAL без SCRIPT LOAD."],
+  "redis.ExecAbortError": ["redis exec abort", "MULTI/EXEC прерван."],
+  "redis.NoPermissionError": ["redis permission", "ACL запретил."],
+  "redis.ClusterDownError": ["redis cluster down", "Кластер недоступен."],
+  "redis.CrossSlotError": ["redis cross slot", "Ключи в разных слотах."],
+  "redis.TryAgainError": ["redis try again", "Повтори позже."],
+  "redis.ClusterError": ["redis cluster", "Ошибка кластера."],
+  "redis.RedisClusterException": ["redis cluster exc", "Общая ошибка кластера."],
+
+  "aioredis.RedisError": ["aioredis ошибка", "Общая ошибка."],
+  "aioredis.ProtocolError": ["aioredis protocol", "Протокол сломан."],
+  "aioredis.ReplyError": ["aioredis reply", "Redis вернул ошибку."],
+  "aioredis.MaxClientsError": ["aioredis max clients", "Лимит клиентов."],
+  "aioredis.ReadOnlyError": ["aioredis readonly", "Реплика."],
+  "aioredis.MasterNotFoundError": ["aioredis master", "Мастер не найден."],
+  "aioredis.SlaveNotFoundError": ["aioredis slave", "Реплика не найдена."],
+  "aioredis.PoolClosedError": ["aioredis pool", "Пул закрыт."],
+
+  "celery.exceptions.CeleryError": ["celery ошибка", "Общая ошибка."],
+  "celery.exceptions.ImproperlyConfigured": ["celery config", "Настройки кривые."],
+  "celery.exceptions.SecurityError": ["celery security", "Подпись/шифрование."],
+  "celery.exceptions.TaskError": ["celery task", "Задача упала."],
+  "celery.exceptions.TaskRevokedError": ["celery revoked", "Задача отменена."],
+  "celery.exceptions.TimeoutError": ["celery timeout", "apply_async(timeout)."],
+  "celery.exceptions.MaxRetriesExceededError": ["celery max retries", "Повторы исчерпаны."],
+  "celery.exceptions.Retry": ["celery retry", "raise self.retry()."],
+  "celery.exceptions.Ignored": ["celery ignored", "Задача проигнорирована."],
+  "celery.exceptions.Reject": ["celery reject", "Задача отклонена."],
+  "celery.exceptions.InvalidTaskError": ["celery invalid task", "Тело задачи битое."],
+  "celery.exceptions.DecodeError": ["celery decode", "Сериализация упала."],
+  "celery.exceptions.EncodeError": ["celery encode", "Сериализация упала."],
+  "celery.exceptions.SoftTimeLimitExceeded": ["celery soft timeout", "soft_time_limit."],
+  "celery.exceptions.TimeLimitExceeded": ["celery time limit", "time_limit."],
+  "celery.exceptions.WorkerLostError": ["celery worker lost", "Воркер умер."],
+  "celery.exceptions.Terminated": ["celery terminated", "Задача убита."],
+  "celery.exceptions.NotRegistered": ["celery not registered", "Таск не зарегистрирован."],
+  "celery.exceptions.AlreadyRegistered": ["celery already registered", "Таск уже есть."],
+  "celery.exceptions.AlwaysEagerIgnored": ["celery always eager", "Игнорируется в eager-режиме."],
+
+  "kombu.exceptions.KombuError": ["kombu ошибка", "Общая ошибка брокера."],
+  "kombu.exceptions.MessageStateError": ["kombu message state", "Сообщение уже ack/nack."],
+  "kombu.exceptions.NotBoundError": ["kombu not bound", "Producer/Queue не привязаны."],
+  "kombu.exceptions.InconsistencyError": ["kombu inconsistency", "Брокер в несогласованном состоянии."],
+
+  "aioamqp.exceptions.AioamqpException": ["aioamqp ошибка", "Общая ошибка AMQP."],
+  "aioamqp.exceptions.AMQPError": ["aioamqp AMQP", "Протокол AMQP."],
+  "aioamqp.exceptions.AMQPConnectionError": ["aioamqp connection", "Не подключился к RabbitMQ."],
+  "aioamqp.exceptions.ChannelNotFound": ["aioamqp channel", "Канал не найден."],
+  "aioamqp.exceptions.DuplicateConsumerTag": ["aioamqp dup consumer", "Дубликат consumer tag."],
+  "aioamqp.exceptions.SynchronizationError": ["aioamqp sync", "Рассинхрон с брокером."],
+
+  "aiokafka.errors.KafkaError": ["aiokafka ошибка", "Общая ошибка Kafka."],
+  "aiokafka.errors.KafkaConnectionError": ["aiokafka connection", "Не подключился."],
+  "aiokafka.errors.KafkaTimeoutError": ["aiokafka timeout", "Таймаут."],
+  "aiokafka.errors.CorrelationIdError": ["aiokafka correlation", "Ответ не тому запросу."],
+  "aiokafka.errors.CommitFailedError": ["aiokafka commit", "Commit offset упал."],
+  "aiokafka.errors.AuthenticationFailedError": ["aiokafka auth", "Auth провалился."],
+  "aiokafka.errors.UnknownTopicOrPartitionError": ["aiokafka topic", "Топик/партиция не найдены."],
+  "aiokafka.errors.InvalidTopicError": ["aiokafka invalid topic", "Имя топика кривое."],
+  "aiokafka.errors.LeaderNotAvailableError": ["aiokafka leader", "Лидер партиции не выбран."],
+  "aiokafka.errors.NotLeaderForPartitionError": ["aiokafka not leader", "Не лидер партиции."],
+  "aiokafka.errors.RequestTimedOutError": ["aiokafka request timeout", "Запрос тайманул."],
+  "aiokafka.errors.BrokerNotAvailableError": ["aiokafka broker", "Брокер недоступен."],
+  "aiokafka.errors.ReplicaNotAvailableError": ["aiokafka replica", "Реплика недоступна."],
+  "aiokafka.errors.MessageSizeTooLargeError": ["aiokafka msg size", "Сообщение > max.message.bytes."],
+  "aiokafka.errors.StaleControllerEpochError": ["aiokafka controller", "Устаревшая эпоха контроллера."],
+  "aiokafka.errors.OffsetOutOfRangeError": ["aiokafka offset", "Offset вне диапазона."],
+  "aiokafka.errors.GroupAuthorizationFailedError": ["aiokafka group auth", "Нет прав на consumer group."],
+  "aiokafka.errors.TopicAuthorizationFailedError": ["aiokafka topic auth", "Нет прав на топик."],
+  "aiokafka.errors.ClusterAuthorizationFailedError": ["aiokafka cluster auth", "Нет прав на кластер."],
+  "aiokafka.errors.InvalidConfigurationError": ["aiokafka config", "Конфиг кривой."],
+  "aiokafka.errors.UnknownError": ["aiokafka unknown", "Непонятная ошибка."],
+
+  "confluent_kafka.KafkaException": ["confluent_kafka ошибка", "Общая ошибка."],
+  "confluent_kafka.KafkaError": ["confluent_kafka Kafka", "Kafka-специфичная ошибка."],
+
+  "paramiko.SSHException": ["paramiko SSH", "SSH-сессия упала."],
+  "paramiko.AuthenticationException": ["paramiko auth", "Auth не прошёл."],
+  "paramiko.BadAuthenticationType": ["paramiko bad auth", "Тип auth не поддерживается."],
+  "paramiko.BadHostKeyException": ["paramiko bad hostkey", "Хост-ключ не совпадает."],
+  "paramiko.ChannelException": ["paramiko channel", "SSH-канал упал."],
+  "paramiko.PasswordRequiredException": ["paramiko password", "Нужен пароль для ключа."],
+  "paramiko.ProxyCommandFailure": ["paramiko proxy", "ProxyCommand упал."],
+  "paramiko.SFTPError": ["paramiko SFTP", "SFTP-операция упала."],
+
+  "fabric.exceptions.NetworkError": ["fabric network", "Сеть упала."],
+  "fabric.exceptions.CommandError": ["fabric command", "Команда вернула != 0."],
+  "fabric.exceptions.AuthError": ["fabric auth", "Auth не прошёл."],
+
+  "boto3.exceptions.Boto3Error": ["boto3 ошибка", "Общая ошибка AWS."],
+  "boto3.exceptions.S3UploadFailedError": ["boto3 s3 upload", "Загрузка в S3 упала."],
+  "botocore.exceptions.ClientError": ["botocore client", "AWS API вернул ошибку."],
+  "botocore.exceptions.BotoCoreError": ["botocore core", "Общая ошибка botocore."],
+  "botocore.exceptions.NoCredentialsError": ["botocore creds", "Нет AWS-кредов."],
+  "botocore.exceptions.PartialCredentialsError": ["botocore partial creds", "Креды неполные."],
+  "botocore.exceptions.EndpointConnectionError": ["botocore endpoint", "Endpoint недоступен."],
+  "botocore.exceptions.ConnectionClosedError": ["botocore conn closed", "Соединение закрыто."],
+  "botocore.exceptions.ReadTimeoutError": ["botocore read timeout", "Чтение таймануло."],
+  "botocore.exceptions.ConnectTimeoutError": ["botocore connect timeout", "Подключение таймануло."],
+  "botocore.exceptions.ProxyConnectionError": ["botocore proxy", "Прокси AWS не пустил."],
+  "botocore.exceptions.SSLError": ["botocore ssl", "SSL с AWS упал."],
+  "botocore.exceptions.WaiterError": ["botocore waiter", "Waiter не дождался."],
+  "botocore.exceptions.UnknownServiceError": ["botocore service", "Неизвестный сервис AWS."],
+  "botocore.exceptions.DataNotFoundError": ["botocore data", "Данные сервиса не найдены."],
+  "botocore.exceptions.ConfigParseError": ["botocore config", "AWS config кривой."],
+  "botocore.exceptions.MissingServiceIdError": ["botocore service id", "Нет serviceId."],
+  "botocore.exceptions.MetadataRetrievalError": ["botocore metadata", "EC2 metadata недоступна."],
+  "botocore.exceptions.CredentialRetrievalError": ["botocore cred retrieval", "Не смог получить креды."],
+
+  "google.auth.exceptions.GoogleAuthError": ["google auth", "Auth упал."],
+  "google.auth.exceptions.DefaultCredentialsError": ["google default creds", "Нет ADC."],
+  "google.auth.exceptions.RefreshError": ["google refresh", "Refresh token не сработал."],
+  "google.auth.exceptions.TransportError": ["google transport", "Транспорт упал."],
+  "google.auth.exceptions.OAuth2Error": ["google oauth2", "OAuth2 провалился."],
+  "google.auth.exceptions.ReauthFailError": ["google reauth", "Reauth не удался."],
+  "google.auth.exceptions.UserAccessTokenError": ["google user token", "Токен юзера кривой."],
+  "google.auth.exceptions.InvalidValue": ["google invalid value", "Неверное значение в auth."],
+  "google.auth.exceptions.InvalidOperation": ["google invalid op", "Операция вне контекста."],
+
+  "google.api_core.exceptions.GoogleAPIError": ["google api", "Общая ошибка API."],
+  "google.api_core.exceptions.ClientError": ["google client", "4xx."],
+  "google.api_core.exceptions.ServerError": ["google server", "5xx."],
+  "google.api_core.exceptions.BadRequest": ["google 400", "Плохой запрос."],
+  "google.api_core.exceptions.Unauthorized": ["google 401", "Не авторизован."],
+  "google.api_core.exceptions.Forbidden": ["google 403", "Запрещено."],
+  "google.api_core.exceptions.NotFound": ["google 404", "Не найдено."],
+  "google.api_core.exceptions.MethodNotAllowed": ["google 405", "Метод не разрешён."],
+  "google.api_core.exceptions.Conflict": ["google 409", "Конфликт."],
+  "google.api_core.exceptions.LengthRequired": ["google 411", "Нужен Content-Length."],
+  "google.api_core.exceptions.PreconditionFailed": ["google 412", "Условие не выполнено."],
+  "google.api_core.exceptions.RequestRangeNotSatisfiable": ["google 416", "Range битый."],
+  "google.api_core.exceptions.TooManyRequests": ["google 429", "Флуд."],
+  "google.api_core.exceptions.Cancelled": ["google cancelled", "Операция отменена."],
+  "google.api_core.exceptions.DeadlineExceeded": ["google deadline", "Дедлайн истёк."],
+  "google.api_core.exceptions.AlreadyExists": ["google exists", "Уже есть."],
+  "google.api_core.exceptions.PermissionDenied": ["google perm", "Нет прав."],
+  "google.api_core.exceptions.Unauthenticated": ["google unauth", "Не аутентифицирован."],
+  "google.api_core.exceptions.ResourceExhausted": ["google exhausted", "Квота исчерпана."],
+  "google.api_core.exceptions.FailedPrecondition": ["google precondition", "Условие не выполнено."],
+  "google.api_core.exceptions.Aborted": ["google aborted", "Прервано."],
+  "google.api_core.exceptions.OutOfRange": ["google out of range", "Вне диапазона."],
+  "google.api_core.exceptions.Unimplemented": ["google unimpl", "Не реализовано."],
+  "google.api_core.exceptions.InternalServerError": ["google 500", "Внутренняя ошибка."],
+  "google.api_core.exceptions.ServiceUnavailable": ["google 503", "Сервис недоступен."],
+  "google.api_core.exceptions.DataLoss": ["google data loss", "Потеря данных."],
+
+  "aiogram.exceptions.TelegramAPIError": ["aiogram API", "Общая ошибка Telegram."],
+  "aiogram.exceptions.NetworkError": ["aiogram network", "Сеть упала."],
+  "aiogram.exceptions.BadRequest": ["aiogram 400", "Плохой запрос к Telegram."],
+  "aiogram.exceptions.Unauthorized": ["aiogram 401", "Токен неверный."],
+  "aiogram.exceptions.Forbidden": ["aiogram 403", "Бот заблокирован/нет прав."],
+  "aiogram.exceptions.NotFound": ["aiogram 404", "Чат/сообщение не найдено."],
+  "aiogram.exceptions.ConflictError": ["aiogram conflict", "Токен уже используется."],
+  "aiogram.exceptions.RetryAfter": ["aiogram retry", "Флуд-контроль, жди N секунд."],
+  "aiogram.exceptions.MigrateToChat": ["aiogram migrate", "Чат мигрировал в супергруппу."],
+  "aiogram.exceptions.RestartingTelegram": ["aiogram restarting", "Telegram перезапускается."],
+  "aiogram.exceptions.TelegramServerError": ["aiogram server", "5xx от Telegram."],
+  "aiogram.exceptions.CantParseEntities": ["aiogram entities", "Markdown/HTML кривой."],
+  "aiogram.exceptions.InvalidHTTPUrlContent": ["aiogram url content", "URL не отдаёт контент."],
+  "aiogram.exceptions.ButtonDataInvalid": ["aiogram button data", "callback_data > 64 байт."],
+  "aiogram.exceptions.MessageToDeleteNotFound": ["aiogram delete", "Сообщение уже удалено."],
+  "aiogram.exceptions.MessageCantBeDeleted": ["aiogram cant delete", "Нельзя удалить."],
+  "aiogram.exceptions.MessageIsNotModified": ["aiogram not modified", "Текст тот же."],
+  "aiogram.exceptions.MessageToEditNotFound": ["aiogram edit", "Сообщение для edit не найдено."],
+  "aiogram.exceptions.MessageToReplyNotFound": ["aiogram reply", "Сообщение для reply не найдено."],
+  "aiogram.exceptions.MessageIdentifierNotSpecified": ["aiogram msg id", "Нет chat_id/message_id."],
+  "aiogram.exceptions.ChatNotFound": ["aiogram chat", "Чат не найден."],
+  "aiogram.exceptions.UserNotFound": ["aiogram user", "Юзер не найден."],
+  "aiogram.exceptions.UserDeactivated": ["aiogram user deactivated", "Аккаунт удалён."],
+  "aiogram.exceptions.BotBlocked": ["aiogram bot blocked", "Бот заблокирован юзером."],
+  "aiogram.exceptions.BotInvalid": ["aiogram bot invalid", "Токен бота невалиден."],
+  "aiogram.exceptions.ChatAdminRequired": ["aiogram admin required", "Нужны права админа."],
+  "aiogram.exceptions.NotEnoughRights": ["aiogram rights", "Недостаточно прав."],
+  "aiogram.exceptions.NotEnoughRightsToRestrict": ["aiogram restrict", "Нет прав на restrict."],
+  "aiogram.exceptions.CantRestrictChatOwner": ["aiogram owner", "Нельзя тронуть владельца."],
+  "aiogram.exceptions.UserNotMutualContact": ["aiogram contact", "Не взаимный контакт."],
+  "aiogram.exceptions.UserIsBlocked": ["aiogram blocked", "Юзер заблокировал бота."],
+  "aiogram.exceptions.ReplyMessageNotFound": ["aiogram reply msg", "Нет сообщения для reply."],
+  "aiogram.exceptions.WebhookAlreadySet": ["aiogram webhook set", "Webhook уже установлен."],
+  "aiogram.exceptions.WebhookRequireHTTPS": ["aiogram webhook https", "Нужен HTTPS."],
+
+  "telethon.errors.TelethonError": ["Telethon ошибка", "Общая ошибка Telethon."],
+  "telethon.errors.InvalidChecksumError": ["Telethon checksum", "Контрольная сумма не совпала."],
+  "telethon.errors.SecurityError": ["Telethon security", "Безопасность MTProto."],
+  "telethon.errors.AlbumPhotosTooMuchError": ["Telethon album", "Слишком много фото в альбоме."],
+  "telethon.errors.AuthKeyUnregisteredError": ["Telethon auth key", "Сессия отозвана."],
+  "telethon.errors.PhoneNumberInvalidError": ["Telethon phone", "Номер кривой."],
+  "telethon.errors.PhoneCodeInvalidError": ["Telethon code", "Код из SMS неверный."],
+  "telethon.errors.PhoneCodeExpiredError": ["Telethon code expired", "Код протух."],
+  "telethon.errors.PhoneCodeHashEmptyError": ["Telethon code hash", "Пустой phone_code_hash."],
+  "telethon.errors.PhoneNumberBannedError": ["Telethon phone banned", "Номер забанен."],
+  "telethon.errors.PhoneNumberOccupiedError": ["Telethon phone occupied", "Номер уже используется."],
+  "telethon.errors.PhoneNumberFloodError": ["Telethon phone flood", "Слишком много попыток."],
+  "telethon.errors.PhoneNumberUnoccupiedError": ["Telethon phone unoccupied", "Номер не зарегистрирован."],
+  "telethon.errors.FirstNameInvalidError": ["Telethon first name", "Имя кривое."],
+  "telethon.errors.LastNameInvalidError": ["Telethon last name", "Фамилия кривая."],
+  "telethon.errors.PasswordHashInvalidError": ["Telethon password hash", "2FA хеш неверный."],
+  "telethon.errors.SessionPasswordNeededError": ["Telethon 2FA", "Нужен 2FA пароль."],
+  "telethon.errors.SessionExpiredError": ["Telethon session expired", "Сессия протухла."],
+  "telethon.errors.SessionRevokedError": ["Telethon session revoked", "Сессия отозвана."],
+  "telethon.errors.FloodWaitError": ["Telethon flood", "Флуд-контроль, жди N секунд."],
+  "telethon.errors.SlowModeWaitError": ["Telethon slow mode", "Slow mode в чате."],
+  "telethon.errors.PeerIdInvalidError": ["Telethon peer", "Неверный peer ID."],
+  "telethon.errors.ChatWriteForbiddenError": ["Telethon chat write", "Нельзя писать в чат."],
+  "telethon.errors.UserIsBlockedError": ["Telethon user blocked", "Юзер заблокировал."],
+  "telethon.errors.UserDeactivatedBanError": ["Telethon user banned", "Аккаунт забанен."],
+  "telethon.errors.MessageDeleteForbiddenError": ["Telethon msg delete", "Нельзя удалить."],
+  "telethon.errors.MessageNotModifiedError": ["Telethon msg not modified", "Текст тот же."],
+  "telethon.errors.MessageTooLongError": ["Telethon msg long", "Сообщение > 4096 символов."],
+  "telethon.errors.MessageEmptyError": ["Telethon msg empty", "Пустое сообщение."],
+  "telethon.errors.MessageIdInvalidError": ["Telethon msg id", "Неверный message_id."],
+  "telethon.errors.MediaEmptyError": ["Telethon media empty", "Пустое медиа."],
+  "telethon.errors.MediaInvalidError": ["Telethon media invalid", "Медиа невалидно."],
+  "telethon.errors.MediaCaptionTooLongError": ["Telethon caption", "Подпись > 1024."],
+  "telethon.errors.FilePartLengthInvalidError": ["Telethon file part", "Размер чанка неверный."],
+  "telethon.errors.FilePart0MissingError": ["Telethon file part 0", "Нет первого чанка."],
+  "telethon.errors.FilePartInvalidError": ["Telethon file part invalid", "Чанк битый."],
+  "telethon.errors.FilePartsInvalidError": ["Telethon file parts", "Чанки битые."],
+  "telethon.errors.FileReferenceExpiredError": ["Telethon file ref", "file_reference протух."],
+  "telethon.errors.FileReferenceInvalidError": ["Telethon file ref invalid", "file_reference неверный."],
+  "telethon.errors.BotMethodInvalidError": ["Telethon bot method", "Метод недоступен боту."],
+  "telethon.errors.BotDomainsInvalidError": ["Telethon bot domains", "Домены для бота кривые."],
+  "telethon.errors.BotInlineDisabledError": ["Telethon bot inline", "Inline отключён."],
+  "telethon.errors.BotPaymentsDisabledError": ["Telethon bot payments", "Платежи отключены."],
+  "telethon.errors.BotResponseTimeoutError": ["Telethon bot timeout", "Бот не ответил вовремя."],
+  "telethon.errors.ButtonDataInvalidError": ["Telethon button data", "callback_data > 64 байт."],
+  "telethon.errors.ButtonTypeInvalidError": ["Telethon button type", "Тип кнопки не тот."],
+  "telethon.errors.ButtonUrlInvalidError": ["Telethon button url", "URL кнопки кривой."],
+  "telethon.errors.CallbackQueryInvalidError": ["Telethon callback", "callback_data неверный."],
+  "telethon.errors.ChannelInvalidError": ["Telethon channel", "Канал невалиден."],
+  "telethon.errors.ChannelPrivateError": ["Telethon channel private", "Канал приватный."],
+  "telethon.errors.ChannelPublicGroupNaError": ["Telethon channel public", "Публичная группа недоступна."],
+  "telethon.errors.ChatAboutTooLongError": ["Telethon about", "Описание > 255."],
+  "telethon.errors.ChatAdminRequiredError": ["Telethon chat admin", "Нужны права админа."],
+  "telethon.errors.ChatForwardsForbiddenError": ["Telethon forwards", "Пересылка запрещена."],
+  "telethon.errors.ChatIdEmptyError": ["Telethon chat id", "Пустой chat_id."],
+  "telethon.errors.ChatIdInvalidError": ["Telethon chat id invalid", "Неверный chat_id."],
+  "telethon.errors.ChatIdGenerateFailedError": ["Telethon chat id gen", "Не смог сгенерить chat_id."],
+  "telethon.errors.ChatInvalidError": ["Telethon chat invalid", "Чат невалиден."],
+  "telethon.errors.ChatLinkExpiredError": ["Telethon chat link", "Ссылка-приглашение протухла."],
+  "telethon.errors.ChatRestrictForbiddenError": ["Telethon chat restrict", "Нельзя ограничить."],
+  "telethon.errors.ChatSendGifsForbiddenError": ["Telethon gifs", "GIF запрещены."],
+  "telethon.errors.ChatSendInlineForbiddenError": ["Telethon inline", "Inline запрещены."],
+  "telethon.errors.ChatSendMediaForbiddenError": ["Telethon media", "Медиа запрещено."],
+  "telethon.errors.ChatSendPlainForbiddenError": ["Telethon plain", "Текст запрещён."],
+  "telethon.errors.ChatSendPollsForbiddenError": ["Telethon polls", "Опросы запрещены."],
+  "telethon.errors.ChatSendStickersForbiddenError": ["Telethon stickers", "Стикеры запрещены."],
+  "telethon.errors.ChatTitleEmptyError": ["Telethon title", "Пустое название чата."],
+  "telethon.errors.ChatTooBigError": ["Telethon chat big", "Слишком много участников."],
+  "telethon.errors.ChatWriteForbiddenError": ["Telethon chat write", "Нельзя писать."],
+  "telethon.errors.ConnectionDeviceModelEmptyError": ["Telethon device model", "device_model пуст."],
+  "telethon.errors.ConnectionLangPackInvalidError": ["Telethon lang pack", "lang_pack неверный."],
+  "telethon.errors.ConnectionLayerInvalidError": ["Telethon layer", "layer неверный."],
+  "telethon.errors.ConnectionSystemAppCrashedError": ["Telethon system app", "Системное приложение упало."],
+  "telethon.errors.ContactAddMissingError": ["Telethon contact add", "Не удалось добавить контакт."],
+  "telethon.errors.ContactIdInvalidError": ["Telethon contact id", "Неверный contact_id."],
+  "telethon.errors.ContactNameEmptyError": ["Telethon contact name", "Пустое имя контакта."],
+  "telethon.errors.ContactsTooMuchError": ["Telethon contacts", "Слишком много контактов."],
+  "telethon.errors.DataInvalidError": ["Telethon data", "Данные невалидны."],
+  "telethon.errors.DataJsonInvalidError": ["Telethon json", "JSON кривой."],
+  "telethon.errors.DateEmptyError": ["Telethon date", "Пустая дата."],
+  "telethon.errors.DcIdInvalidError": ["Telethon dc", "Неверный DC ID."],
+  "telethon.errors.EmoticonEmptyError": ["Telethon emoticon", "Пустой эмодзи."],
+  "telethon.errors.EmoticonInvalidError": ["Telethon emoticon invalid", "Эмодзи неверный."],
+  "telethon.errors.EmoticonStickerpackMissingError": ["Telethon stickerpack", "Стикерпак не найден."],
+  "telethon.errors.EncryptedMessageInvalidError": ["Telethon encrypted msg", "Зашифрованное сообщение битое."],
+  "telethon.errors.EncryptionDeclinedError": ["Telethon encryption", "Шифрование отклонено."],
+  "telethon.errors.EncryptionIdInvalidError": ["Telethon encryption id", "Неверный encryption_id."],
+  "telethon.errors.EntitiesTooLongError": ["Telethon entities", "Слишком много entities."],
+  "telethon.errors.EntityBoundsInvalidError": ["Telethon entity bounds", "Границы entities неверные."],
+  "telethon.errors.EntityIdInvalidError": ["Telethon entity id", "Неверный entity_id."],
+  "telethon.errors.ErrorTextEmptyError": ["Telethon error text", "Пустой текст ошибки."],
+  "telethon.errors.ExportCardInvalidError": ["Telethon export card", "Экспортная карта неверна."],
+  "telethon.errors.ExternalUrlInvalidError": ["Telethon external url", "Внешний URL неверен."],
+  "telethon.errors.FileEmtpyError": ["Telethon file empty", "Пустой файл."],
+  "telethon.errors.FileIdInvalidError": ["Telethon file id", "Неверный file_id."],
+  "telethon.errors.FileMigrateError": ["Telethon file migrate", "Файл на другом DC."],
+  "telethon.errors.FilePartsInvalidError": ["Telethon file parts", "Чанки файла неверны."],
+  "telethon.errors.FileTitleEmptyError": ["Telethon file title", "Пустой заголовок файла."],
+  "telethon.errors.FilterBlockUnsupportedError": ["Telethon filter", "Фильтр не поддерживается."],
+  "telethon.errors.FilterIdInvalidError": ["Telethon filter id", "Неверный filter_id."],
+  "telethon.errors.FilterTitleEmptyError": ["Telethon filter title", "Пустой заголовок фильтра."],
+  "telethon.errors.FolderIdEmptyError": ["Telethon folder", "Пустой folder_id."],
+  "telethon.errors.FolderIdInvalidError": ["Telethon folder id", "Неверный folder_id."],
+  "telethon.errors.ForumMissingError": ["Telethon forum", "Форум отсутствует."],
+  "telethon.errors.GameBotInvalidError": ["Telethon game bot", "Игровой бот неверен."],
+  "telethon.errors.GameEmptyError": ["Telethon game empty", "Пустая игра."],
+  "telethon.errors.GameIdInvalidError": ["Telethon game id", "Неверный game_id."],
+  "telethon.errors.GameShortnameInvalidError": ["Telethon game shortname", "Неверный shortname."],
+  "telethon.errors.GifContentTypeInvalidError": ["Telethon gif content", "Тип GIF неверен."],
+  "telethon.errors.GifIdInvalidError": ["Telethon gif id", "Неверный gif_id."],
+  "telethon.errors.GraphExpiredReloadError": ["Telethon graph", "Граф протух, нужен reload."],
+  "telethon.errors.GraphInvalidReloadError": ["Telethon graph reload", "Reload графа неверен."],
+  "telethon.errors.GraphOutdatedReloadError": ["Telethon graph outdated", "Граф устарел."],
+  "telethon.errors.GroupcallAddParticipantsFailedError": ["Telethon groupcall add", "Не смог добавить в звонок."],
+  "telethon.errors.GroupcallAlreadyDiscardedError": ["Telethon groupcall discarded", "Звонок уже сброшен."],
+  "telethon.errors.GroupcallAlreadyJoinedError": ["Telethon groupcall joined", "Уже в звонке."],
+  "telethon.errors.GroupcallForbiddenError": ["Telethon groupcall forbidden", "Нет доступа к звонку."],
+  "telethon.errors.GroupcallInvalidError": ["Telethon groupcall invalid", "Звонок невалиден."],
+  "telethon.errors.GroupcallJoinMissingError": ["Telethon groupcall join", "Не в звонке."],
+  "telethon.errors.GroupcallNotModifiedError": ["Telethon groupcall not modified", "Звонок не изменён."],
+  "telethon.errors.GroupcallSsrcDuplicateNeededError": ["Telethon groupcall ssrc", "Нужен дубликат SSRC."],
+  "telethon.errors.HashInvalidError": ["Telethon hash", "Неверный hash."],
+  "telethon.errors.HistoryImportFailedError": ["Telethon history import", "Импорт истории упал."],
+  "telethon.errors.ImageProcessFailedError": ["Telethon image", "Обработка изображения упала."],
+  "telethon.errors.ImportFileDecryptionFailedError": ["Telethon import decrypt", "Дешифрование импорта упало."],
+  "telethon.errors.ImportFormatUnrecognizedError": ["Telethon import format", "Формат импорта не распознан."],
+  "telethon.errors.ImportIdInvalidError": ["Telethon import id", "Неверный import_id."],
+  "telethon.errors.InlineBotRequiredError": ["Telethon inline bot", "Нужен inline-бот."],
+  "telethon.errors.InputConstructorInvalidError": ["Telethon input constructor", "Конструктор input неверен."],
+  "telethon.errors.InputFetchErrorError": ["Telethon input fetch", "Ошибка получения input."],
+  "telethon.errors.InputFetchFailError": ["Telethon input fetch fail", "Получение input провалилось."],
+  "telethon.errors.InputLayerInvalidError": ["Telethon input layer", "Layer input неверен."],
+  "telethon.errors.InputMethodInvalidError": ["Telethon input method", "Метод input неверен."],
+  "telethon.errors.InputRequestTooLongError": ["Telethon input request long", "Запрос слишком длинный."],
+  "telethon.errors.InputUserDeactivatedError": ["Telethon input user deactivated", "Юзер деактивирован."],
+  "telethon.errors.InterdcCallErrorError": ["Telethon interdc", "Ошибка вызова между DC."],
+  "telethon.errors.InterdcCallRichErrorError": ["Telethon interdc rich", "Богатая ошибка interdc."],
+  "telethon.errors.InviteHashEmptyError": ["Telethon invite hash", "Пустой invite_hash."],
+  "telethon.errors.InviteHashExpiredError": ["Telethon invite expired", "Приглашение протухло."],
+  "telethon.errors.InviteHashInvalidError": ["Telethon invite invalid", "invite_hash неверен."],
+  "telethon.errors.LangCodeInvalidError": ["Telethon lang code", "Код языка неверен."],
+  "telethon.errors.LangCodeNotSupportedError": ["Telethon lang not supported", "Язык не поддерживается."],
+  "telethon.errors.LangPackInvalidError": ["Telethon lang pack", "lang_pack неверен."],
+  "telethon.errors.LimitInvalidError": ["Telethon limit", "Лимит неверен."],
+  "telethon.errors.LinkNotModifiedError": ["Telethon link", "Ссылка не изменена."],
+  "telethon.errors.Md5ChecksumEmptyError": ["Telethon md5", "Пустой md5."],
+  "telethon.errors.MediaFileInvalidError": ["Telethon media file", "Медиа-файл неверен."],
+  "telethon.errors.MediaGroupedInvalidError": ["Telethon media grouped", "Медиа-группа неверна."],
+  "telethon.errors.MediaInvalidError": ["Telethon media", "Медиа неверно."],
+  "telethon.errors.MediaPrevInvalidError": ["Telethon media prev", "Предыдущее медиа неверно."],
+  "telethon.errors.MediaTtlInvalidError": ["Telethon media ttl", "TTL медиа неверен."],
+  "telethon.errors.MessageAuthorRequiredError": ["Telethon msg author", "Нужен автор сообщения."],
+  "telethon.errors.MessageEditAuthorExpiredError": ["Telethon msg edit author", "Автор правки истёк."],
+  "telethon.errors.MessageEmptyError": ["Telethon msg empty", "Пустое сообщение."],
+  "telethon.errors.MessageIdInvalidError": ["Telethon msg id", "Неверный message_id."],
+  "telethon.errors.MessageNotModifiedError": ["Telethon msg not modified", "Сообщение не изменено."],
+  "telethon.errors.MessagePollClosedError": ["Telethon msg poll closed", "Опрос закрыт."],
+  "telethon.errors.MessageTooLongError": ["Telethon msg long", "Сообщение слишком длинное."],
+  "telethon.errors.MethodInvalidError": ["Telethon method", "Метод неверен."],
+  "telethon.errors.MsgIdDecreaseError": ["Telethon msg id decrease", "message_id уменьшился."],
+  "telethon.errors.MsgIdInvalidError": ["Telethon msg id invalid", "Неверный message_id."],
+  "telethon.errors.MsgWaitFailedError": ["Telethon msg wait", "Ожидание сообщения провалилось."],
+  "telethon.errors.MsgWaitFailedError": ["Telethon msg wait failed", "Ожидание сообщения упало."],
+  "telethon.errors.MultiMediaTooLongError": ["Telethon multi media", "Слишком много медиа."],
+  "telethon.errors.NeedChatInvalidError": ["Telethon need chat", "Нужен неверный чат."],
+  "telethon.errors.NeedMemberInvalidError": ["Telethon need member", "Нужен неверный участник."],
+  "telethon.errors.NetworkMigrateError": ["Telethon network migrate", "Миграция сети."],
+  "telethon.errors.NewSaltInvalidError": ["Telethon new salt", "Новый salt неверен."],
+  "telethon.errors.NewSettingsInvalidError": ["Telethon new settings", "Новые настройки неверны."],
+  "telethon.errors.NextOffsetInvalidError": ["Telethon next offset", "next_offset неверен."],
+  "telethon.errors.OffsetInvalidError": ["Telethon offset", "offset неверен."],
+  "telethon.errors.OffsetPeerIdInvalidError": ["Telethon offset peer", "offset_peer неверен."],
+  "telethon.errors.OptionsTooMuchError": ["Telethon options", "Слишком много опций."],
+  "telethon.errors.PackShortNameInvalidError": ["Telethon pack shortname", "Короткое имя пака неверно."],
+  "telethon.errors.PackShortNameOccupiedError": ["Telethon pack occupied", "Короткое имя занято."],
+  "telethon.errors.PackTitleInvalidError": ["Telethon pack title", "Заголовок пака неверен."],
+  "telethon.errors.PaidReactionInvalidError": ["Telethon paid reaction", "Платная реакция неверна."],
+  "telethon.errors.ParticipantIdInvalidError": ["Telethon participant", "Неверный participant_id."],
+  "telethon.errors.ParticipantsTooMuchError": ["Telethon participants", "Слишком много участников."],
+  "telethon.errors.PasswordEmptyError": ["Telethon password empty", "Пустой пароль."],
+  "telethon.errors.PasswordHashInvalidError": ["Telethon password hash", "Неверный password_hash."],
+  "telethon.errors.PasswordMissingError": ["Telethon password missing", "Пароль отсутствует."],
+  "telethon.errors.PasswordRequiredError": ["Telethon password required", "Нужен пароль."],
+  "telethon.errors.PasswordTooFreshError": ["Telethon password fresh", "Пароль слишком свежий."],
+  "telethon.errors.PeerIdInvalidError": ["Telethon peer", "Неверный peer_id."],
+  "telethon.errors.PeerHistoryEmptyError": ["Telethon peer history", "История пуста."],
+  "telethon.errors.PeerIdNotSupportedError": ["Telethon peer not supported", "peer_id не поддерживается."],
+  "telethon.errors.PersistentTimestampInvalidError": ["Telethon persistent ts", "persistent_timestamp неверен."],
+  "telethon.errors.PersistentTimestampOutdatedError": ["Telethon persistent ts outdated", "persistent_timestamp устарел."],
+  "telethon.errors.PetitionVersionOutdatedError": ["Telethon petition", "Версия петиции устарела."],
+  "telethon.errors.PhoneCodeEmptyError": ["Telethon phone code empty", "Пустой phone_code."],
+  "telethon.errors.PhoneCodeExpiredError": ["Telethon phone code expired", "phone_code протух."],
+  "telethon.errors.PhoneCodeHashEmptyError": ["Telethon phone code hash", "Пустой phone_code_hash."],
+  "telethon.errors.PhoneCodeInvalidError": ["Telethon phone code invalid", "phone_code неверен."],
+  "telethon.errors.PhoneHashExpiredError": ["Telethon phone hash", "phone_hash протух."],
+  "telethon.errors.PhoneMigrateError": ["Telethon phone migrate", "Миграция телефона."],
+  "telethon.errors.PhoneNotActivatedError": ["Telethon phone not activated", "Телефон не активирован."],
+  "telethon.errors.PhoneNumberAppOutdatedError": ["Telethon phone app", "Приложение устарело."],
+  "telethon.errors.PhoneNumberBannedError": ["Telethon phone banned", "Телефон забанен."],
+  "telethon.errors.PhoneNumberFloodError": ["Telethon phone flood", "Флуд по телефону."],
+  "telethon.errors.PhoneNumberInvalidError": ["Telethon phone invalid", "Телефон неверен."],
+  "telethon.errors.PhoneNumberOccupiedError": ["Telethon phone occupied", "Телефон занят."],
+  "telethon.errors.PhoneNumberUnoccupiedError": ["Telethon phone unoccupied", "Телефон свободен."],
+  "telethon.errors.PhotoContentTypeInvalidError": ["Telethon photo content", "Тип фото неверен."],
+  "telethon.errors.PhotoCropFileMissingError": ["Telethon photo crop", "Нет файла обрезки."],
+  "telethon.errors.PhotoCropSizeInvalidError": ["Telethon photo crop size", "Размер обрезки неверен."],
+  "telethon.errors.PhotoExtInvalidError": ["Telethon photo ext", "Расширение фото неверно."],
+  "telethon.errors.PhotoFileMissingError": ["Telethon photo file", "Нет файла фото."],
+  "telethon.errors.PhotoIdInvalidError": ["Telethon photo id", "Неверный photo_id."],
+  "telethon.errors.PhotoImageSizeInvalidError": ["Telethon photo size", "Размер фото неверен."],
+  "telethon.errors.PhotoInvalidDataError": ["Telethon photo data", "Данные фото неверны."],
+  "telethon.errors.PhotoInvalidDimensionsError": ["Telethon photo dimensions", "Размеры фото неверны."],
+  "telethon.errors.PhotoSaveFileInvalidError": ["Telethon photo save", "Не удалось сохранить фото."],
+  "telethon.errors.PollAnswerInvalidError": ["Telethon poll answer", "Ответ опроса неверен."],
+  "telethon.errors.PollAnswersInvalidError": ["Telethon poll answers", "Ответы опроса неверны."],
+  "telethon.errors.PollAnswerInvalidError": ["Telethon poll answer invalid", "Ответ опроса неверен."],
+  "telethon.errors.PollAnswersInvalidError": ["Telethon poll answers invalid", "Ответы опроса неверны."],
+  "telethon.errors.PollClosedError": ["Telethon poll closed", "Опрос закрыт."],
+  "telethon.errors.PollOptionInvalidError": ["Telethon poll option", "Опция опроса неверна."],
+  "telethon.errors.PollOptionInvalidError": ["Telethon poll option invalid", "Опция опроса неверна."],
+  "telethon.errors.PollSupportUnsupportedError": ["Telethon poll unsupported", "Опрос не поддерживается."],
+  "telethon.errors.PollVoteRequiredError": ["Telethon poll vote", "Нужно проголосовать."],
+  "telethon.errors.PostponedTimeoutError": ["Telethon postponed", "Таймаут отложен."],
+  "telethon.errors.PrivacyKeyInvalidError": ["Telethon privacy key", "Ключ приватности неверен."],
+  "telethon.errors.PrivacyValueInvalidError": ["Telethon privacy value", "Значение приватности неверно."],
+  "telethon.errors.PublicKeyRequiredError": ["Telethon public key", "Нужен публичный ключ."],
+  "telethon.errors.QueryIdEmptyError": ["Telethon query id", "Пустой query_id."],
+  "telethon.errors.QueryIdInvalidError": ["Telethon query id invalid", "Неверный query_id."],
+  "telethon.errors.QueryTooShortError": ["Telethon query short", "Запрос слишком короткий."],
+  "telethon.errors.RandomIdDuplicateError": ["Telethon random id", "Дубликат random_id."],
+  "telethon.errors.RandomIdEmptyError": ["Telethon random id empty", "Пустой random_id."],
+  "telethon.errors.RandomIdInvalidError": ["Telethon random id invalid", "Неверный random_id."],
+  "telethon.errors.RandomLengthInvalidError": ["Telethon random length", "Неверная случайная длина."],
+  "telethon.errors.ReactionEmptyError": ["Telethon reaction empty", "Пустая реакция."],
+  "telethon.errors.ReactionInvalidError": ["Telethon reaction invalid", "Неверная реакция."],
+  "telethon.errors.RecentSearchesEmptyError": ["Telethon recent searches", "Нет недавних поисков."],
+  "telethon.errors.ReplyMarkupBuyMissingError": ["Telethon reply markup buy", "Нет buy-кнопки."],
+  "telethon.errors.ReplyMarkupGameEmptyError": ["Telethon reply markup game", "Нет game-кнопки."],
+  "telethon.errors.ReplyMarkupInvalidError": ["Telethon reply markup", "reply_markup неверен."],
+  "telethon.errors.ReplyMarkupTooLongError": ["Telethon reply markup long", "reply_markup слишком длинный."],
+  "telethon.errors.ResultsTooMuchError": ["Telethon results", "Слишком много результатов."],
+  "telethon.errors.RsaDecryptFailedError": ["Telethon rsa", "RSA-дешифрование упало."],
+  "telethon.errors.ScheduleBotRequiredError": ["Telethon schedule bot", "Нужен бот для расписания."],
+  "telethon.errors.ScheduleDateInvalidError": ["Telethon schedule date", "Дата расписания неверна."],
+  "telethon.errors.ScheduleStatusPrivateError": ["Telethon schedule private", "Статус расписания приватен."],
+  "telethon.errors.ScheduleTooMuchError": ["Telethon schedule too much", "Слишком много расписаний."],
+  "telethon.errors.ScoreInvalidError": ["Telethon score", "Счёт неверен."],
+  "telethon.errors.SearchQueryEmptyError": ["Telethon search empty", "Пустой поисковый запрос."],
+  "telethon.errors.SearchQueryInvalidError": ["Telethon search invalid", "Поисковый запрос неверен."],
+  "telethon.errors.SecretQuestionsEmptyError": ["Telethon secret questions", "Пустые секретные вопросы."],
+  "telethon.errors.SendMessageMediaInvalidError": ["Telethon send media", "Медиа для отправки неверно."],
+  "telethon.errors.SendMessageTypeInvalidError": ["Telethon send type", "Тип сообщения неверен."],
+  "telethon.errors.SessionExpiredError": ["Telethon session expired", "Сессия протухла."],
+  "telethon.errors.SessionPasswordNeededError": ["Telethon 2FA", "Нужен 2FA-пароль."],
+  "telethon.errors.SessionRevokedError": ["Telethon session revoked", "Сессия отозвана."],
+  "telethon.errors.Sha256HashEmptyError": ["Telethon sha256", "Пустой sha256_hash."],
+  "telethon.errors.SlowModeWaitError": ["Telethon slow mode", "Slow mode в чате."],
+  "telethon.errors.SmsCodeCreateFailedError": ["Telethon sms code", "Не удалось создать SMS-код."],
+  "telethon.errors.StartParamEmptyError": ["Telethon start param", "Пустой start_param."],
+  "telethon.errors.StartParamInvalidError": ["Telethon start param invalid", "Неверный start_param."],
+  "telethon.errors.StickerDocumentInvalidError": ["Telethon sticker document", "Документ стикера неверен."],
+  "telethon.errors.StickerEmojiInvalidError": ["Telethon sticker emoji", "Эмодзи стикера неверен."],
+  "telethon.errors.StickerFileInvalidError": ["Telethon sticker file", "Файл стикера неверен."],
+  "telethon.errors.StickerGifDimensionsError": ["Telethon sticker gif dimensions", "Размеры GIF-стикера неверны."],
+  "telethon.errors.StickerIdInvalidError": ["Telethon sticker id", "Неверный sticker_id."],
+  "telethon.errors.StickerImageInvalidError": ["Telethon sticker image", "Изображение стикера неверно."],
+  "telethon.errors.StickerMimeInvalidError": ["Telethon sticker mime", "MIME стикера неверен."],
+  "telethon.errors.StickerPngDimensionsError": ["Telethon sticker png", "Размеры PNG-стикера неверны."],
+  "telethon.errors.StickerPngNopaddingError": ["Telethon sticker png padding", "Нет padding у PNG-стикера."],
+  "telethon.errors.StickerTgsDocumentError": ["Telethon sticker tgs", "Документ TGS-стикера неверен."],
+  "telethon.errors.StickerTgsNodocsError": ["Telethon sticker tgs nodocs", "Нет docs у TGS-стикера."],
+  "telethon.errors.StickerTgsNotgsError": ["Telethon sticker tgs notgs", "Нет TGS у стикера."],
+  "telethon.errors.StickerThumbMissingError": ["Telethon sticker thumb", "Нет превью стикера."],
+  "telethon.errors.StickerThumbPngNopaddingError": ["Telethon sticker thumb png", "Нет padding у PNG-превью."],
+  "telethon.errors.StickerpackStickersTooMuchError": ["Telethon stickerpack", "Слишком много стикеров в паке."],
+  "telethon.errors.StickersEmptyError": ["Telethon stickers empty", "Пустые стикеры."],
+  "telethon.errors.StickersTooMuchError": ["Telethon stickers too much", "Слишком много стикеров."],
+  "telethon.errors.StoreInvalidPeerError": ["Telethon store peer", "Неверный peer для store."],
+  "telethon.errors.SwitchPmEmptyError": ["Telethon switch pm", "Пустой switch_pm."],
+  "telethon.errors.SwitchPmInvalidError": ["Telethon switch pm invalid", "Неверный switch_pm."],
+  "telethon.errors.TakeoutInitDelayError": ["Telethon takeout delay", "Задержка инициализации takeout."],
+  "telethon.errors.TakeoutInvalidError": ["Telethon takeout invalid", "Неверный takeout."],
+  "telethon.errors.TakeoutRequiredError": ["Telethon takeout required", "Нужен takeout."],
+  "telethon.errors.TempAuthKeyAlreadyBoundError": ["Telethon temp auth key", "Temp auth key уже привязан."],
+  "telethon.errors.TempAuthKeyEmptyError": ["Telethon temp auth key empty", "Пустой temp auth key."],
+  "telethon.errors.TempAuthKeyInvalidError": ["Telethon temp auth key invalid", "Неверный temp auth key."],
+  "telethon.errors.ThemeFileInvalidError": ["Telethon theme file", "Файл темы неверен."],
+  "telethon.errors.ThemeFormatInvalidError": ["Telethon theme format", "Формат темы неверен."],
+  "telethon.errors.ThemeInvalidError": ["Telethon theme", "Тема неверна."],
+  "telethon.errors.ThemeMimeInvalidError": ["Telethon theme mime", "MIME темы неверен."],
+  "telethon.errors.ThemeTitleInvalidError": ["Telethon theme title", "Заголовок темы неверен."],
+  "telethon.errors.TmpPasswordDisabledError": ["Telethon tmp password", "Временный пароль отключён."],
+  "telethon.errors.TmpPasswordInvalidError": ["Telethon tmp password invalid", "Неверный tmp_password."],
+  "telethon.errors.TokenInvalidError": ["Telethon token", "Неверный token."],
+  "telethon.errors.TotpPasswordInvalidError": ["Telethon totp", "Неверный TOTP-пароль."],
+  "telethon.errors.TotpPasswordMissingError": ["Telethon totp missing", "Отсутствует TOTP-пароль."],
+  "telethon.errors.TranscriptionFailedError": ["Telethon transcription", "Транскрипция упала."],
+  "telethon.errors.TypesEmptyError": ["Telethon types empty", "Пустые типы."],
+  "telethon.errors.TypeConstructorInvalidError": ["Telethon type constructor", "Конструктор типа неверен."],
+  "telethon.errors.UrlInvalidError": ["Telethon url", "Неверный URL."],
+  "telethon.errors.UserAlreadyParticipantError": ["Telethon user already", "Юзер уже участник."],
+  "telethon.errors.UserBannedInChannelError": ["Telethon user banned channel", "Юзер забанен в канале."],
+  "telethon.errors.UserBlockedError": ["Telethon user blocked", "Юзер заблокирован."],
+  "telethon.errors.UserBotError": ["Telethon user bot", "Операция с userbot."],
+  "telethon.errors.UserBotRequiredError": ["Telethon user bot required", "Нужен userbot."],
+  "telethon.errors.UserChannelsTooMuchError": ["Telethon user channels", "Слишком много каналов у юзера."],
+  "telethon.errors.UserCreatorError": ["Telethon user creator", "Операция с создателем."],
+  "telethon.errors.UserDeactivatedError": ["Telethon user deactivated", "Юзер деактивирован."],
+  "telethon.errors.UserDeactivatedBanError": ["Telethon user banned", "Юзер забанен."],
+  "telethon.errors.UserIdEmptyError": ["Telethon user id empty", "Пустой user_id."],
+  "telethon.errors.UserIdInvalidError": ["Telethon user id invalid", "Неверный user_id."],
+  "telethon.errors.UserIdNotModifiedError": ["Telethon user id not modified", "user_id не изменён."],
+  "telethon.errors.UserIsBlockedError": ["Telethon user blocked", "Юзер заблокировал."],
+  "telethon.errors.UserIsBotError": ["Telethon user is bot", "Юзер — бот."],
+  "telethon.errors.UserKickedError": ["Telethon user kicked", "Юзер кикнут."],
+  "telethon.errors.UserMigrateError": ["Telethon user migrate", "Миграция юзера."],
+  "telethon.errors.UserNotMutualContactError": ["Telethon user not mutual", "Не взаимный контакт."],
+  "telethon.errors.UserNotParticipantError": ["Telethon user not participant", "Юзер не участник."],
+  "telethon.errors.UserPrivacyRestrictedError": ["Telethon user privacy", "Приватность юзера ограничена."],
+  "telethon.errors.UserRestrictedError": ["Telethon user restricted", "Юзер ограничен."],
+  "telethon.errors.UserVolumeInvalidError": ["Telethon user volume", "Громкость юзера неверна."],
+  "telethon.errors.UsersTooFewError": ["Telethon users few", "Слишком мало юзеров."],
+  "telethon.errors.UsersTooMuchError": ["Telethon users too much", "Слишком много юзеров."],
+  "telethon.errors.UsernameInvalidError": ["Telethon username", "Неверный username."],
+  "telethon.errors.UsernameNotModifiedError": ["Telethon username not modified", "username не изменён."],
+  "telethon.errors.UsernameNotOccupiedError": ["Telethon username not occupied", "username свободен."],
+  "telethon.errors.UsernameOccupiedError": ["Telethon username occupied", "username занят."],
+  "telethon.errors.UserpicPrivacyRequiredError": ["Telethon userpic privacy", "Нужна приватность аватара."],
+  "telethon.errors.VersionEmptyError": ["Telethon version empty", "Пустая версия."],
+  "telethon.errors.VideoContentTypeInvalidError": ["Telethon video content", "Тип видео неверен."],
+  "telethon.errors.VideoFileInvalidError": ["Telethon video file", "Файл видео неверен."],
+  "telethon.errors.VideoTitleEmptyError": ["Telethon video title", "Пустой заголовок видео."],
+  "telethon.errors.VoiceMessagesDisabledError": ["Telethon voice messages", "Голосовые сообщения отключены."],
+  "telethon.errors.WallpaperFileInvalidError": ["Telethon wallpaper", "Файл обоев неверен."],
+  "telethon.errors.WallpaperMimeInvalidError": ["Telethon wallpaper mime", "MIME обоев неверен."],
+  "telethon.errors.WcConvertUrlInvalidError": ["Telethon wc url", "Неверный WC-URL."],
+  "telethon.errors.WebdocumentInvalidError": ["Telethon webdocument", "Веб-документ неверен."],
+  "telethon.errors.WebdocumentMimeInvalidError": ["Telethon webdocument mime", "MIME веб-документа неверен."],
+  "telethon.errors.WebdocumentSizeTooBigError": ["Telethon webdocument size", "Веб-документ слишком большой."],
+  "telethon.errors.WebdocumentUrlInvalidError": ["Telethon webdocument url", "URL веб-документа неверен."],
+  "telethon.errors.WebpageCurlFailedError": ["Telethon webpage curl", "Curl веб-страницы упал."],
+  "telethon.errors.WebpageMediaEmptyError": ["Telethon webpage media", "Пустое медиа веб-страницы."],
+  "telethon.errors.WebpageUrlInvalidError": ["Telethon webpage url", "URL веб-страницы неверен."],
+  "telethon.errors.WebpushAuthKeyInvalidError": ["Telethon webpush auth", "Ключ webpush неверен."],
+  "telethon.errors.WebpushTokenExpiredError": ["Telethon webpush token", "Токен webpush протух."],
+  "telethon.errors.WorkerBusyTooLongRetryError": ["Telethon worker busy", "Воркер занят слишком долго."],
+  "telethon.errors.YouBlockedUserError": ["Telethon you blocked", "Ты заблокировал юзера."],
+
+  "jwt.exceptions.InvalidTokenError": ["JWT неверный токен", "Токен не прошёл проверку."],
+  "jwt.exceptions.DecodeError": ["JWT decode", "Не смог декодировать."],
+  "jwt.exceptions.ExpiredSignatureError": ["JWT expired", "Токен протух."],
+  "jwt.exceptions.ImmatureSignatureError": ["JWT immature", "Токен ещё не активен (nbf)."],
+  "jwt.exceptions.InvalidIssuedAtError": ["JWT iat", "iat из будущего."],
+  "jwt.exceptions.InvalidAudienceError": ["JWT audience", "aud не совпадает."],
+  "jwt.exceptions.InvalidIssuerError": ["JWT issuer", "iss не совпадает."],
+  "jwt.exceptions.MissingRequiredClaimError": ["JWT claim", "Нет обязательного claim."],
+  "jwt.exceptions.PyJWKError": ["JWT JWK", "JWK кривой."],
+  "jwt.exceptions.PyJWKSetError": ["JWT JWKSet", "JWKSet кривой."],
+
+  "oauthlib.oauth2.InvalidClientError": ["OAuth2 client", "Неверный client_id."],
+  "oauthlib.oauth2.InvalidGrantError": ["OAuth2 grant", "Неверный grant."],
+  "oauthlib.oauth2.InvalidRequestError": ["OAuth2 request", "Запрос кривой."],
+  "oauthlib.oauth2.InvalidScopeError": ["OAuth2 scope", "Неверный scope."],
+  "oauthlib.oauth2.UnauthorizedClientError": ["OAuth2 unauthorized client", "Клиент не авторизован."],
+  "oauthlib.oauth2.UnsupportedGrantTypeError": ["OAuth2 grant type", "grant_type не поддерживается."],
+  "oauthlib.oauth2.UnsupportedResponseTypeError": ["OAuth2 response type", "response_type не поддерживается."],
+  "oauthlib.oauth2.AccessDeniedError": ["OAuth2 access denied", "Доступ запрещён."],
+
+  "paramiko.ssh_exception.SSHException": ["paramiko SSH", "SSH-сессия упала."],
+  "paramiko.ssh_exception.AuthenticationException": ["paramiko auth", "Auth не прошёл."],
+  "paramiko.ssh_exception.BadAuthenticationType": ["paramiko bad auth", "Тип auth не поддерживается."],
+  "paramiko.ssh_exception.BadHostKeyException": ["paramiko hostkey", "Хост-ключ не совпадает."],
+  "paramiko.ssh_exception.ChannelException": ["paramiko channel", "SSH-канал упал."],
+  "paramiko.ssh_exception.PasswordRequiredException": ["paramiko password", "Нужен пароль для ключа."],
+
+  "cryptography.exceptions.InvalidSignature": ["crypto signature", "Подпись неверна."],
+  "cryptography.exceptions.InvalidTag": ["crypto tag", "AEAD-тег неверен."],
+  "cryptography.exceptions.UnsupportedAlgorithm": ["crypto algo", "Алгоритм не поддерживается."],
+  "cryptography.exceptions.AlreadyFinalized": ["crypto finalized", "Примитив уже финализирован."],
+  "cryptography.exceptions.AlreadyUpdated": ["crypto updated", "Примитив уже обновлён."],
+  "cryptography.exceptions.NotYetFinalized": ["crypto not finalized", "Примитив ещё не финализирован."],
+
+  "nacl.exceptions.CryptoError": ["PyNaCl crypto", "Общая ошибка."],
+  "nacl.exceptions.BadSignatureError": ["PyNaCl signature", "Подпись неверна."],
+  "nacl.exceptions.RuntimeError": ["PyNaCl runtime", "Runtime-ошибка libsodium."],
+  "nacl.exceptions.UnavailableError": ["PyNaCl unavailable", "libsodium недоступен."],
+
+  "passlib.exc.PasslibError": ["passlib ошибка", "Общая ошибка."],
+  "passlib.exc.MissingBackendError": ["passlib backend", "Бэкенд хеширования не найден."],
+  "passlib.exc.UnknownHashError": ["passlib hash", "Неизвестный формат хеша."],
+  "passlib.exc.InvalidHashError": ["passlib invalid hash", "Неверный хеш."],
+
+  "bcrypt.BcryptError": ["bcrypt ошибка", "Общая ошибка."],
+
+  "argon2.exceptions.Argon2Error": ["argon2 ошибка", "Общая ошибка."],
+  "argon2.exceptions.HashingError": ["argon2 hash", "Хеширование упало."],
+  "argon2.exceptions.VerifyMismatchError": ["argon2 verify", "Пароль не совпал."],
+  "argon2.exceptions.VerificationError": ["argon2 verification", "Верификация упала."],
+  "argon2.exceptions.InvalidHashError": ["argon2 invalid hash", "Неверный хеш."],
+  "argon2.exceptions.InvalidHashVersionError": ["argon2 hash version", "Версия хеша неверна."],
+  "argon2.exceptions.InvalidParametersError": ["argon2 params", "Параметры неверны."],
+  "argon2.exceptions.TypeCheckError": ["argon2 type", "Тип аргумента неверен."],
+
+  "secrets.SecretError": ["secrets ошибка", "Генерация секретов упала."],
+
+  "numpy.AxisError": ["numpy axis", "Ось вне диапазона."],
+  "numpy.ComplexWarning": ["numpy complex", "Комплексное число отброшено."],
+  "numpy.DataSourceError": ["numpy datasource", "Источник данных упал."],
+  "numpy.VisibleDeprecationWarning": ["numpy deprecation", "Скоро устареет."],
+  "numpy.DTypePromotionError": ["numpy dtype promotion", "Нельзя продвинуть типы."],
+  "numpy.exceptions.AxisError": ["numpy axis", "Ось вне диапазона."],
+  "numpy.exceptions.ComplexWarning": ["numpy complex", "Комплексное число отброшено."],
+  "numpy.exceptions.DTypePromotionError": ["numpy dtype", "Нельзя продвинуть типы."],
+  "numpy.exceptions.VisibleDeprecationWarning": ["numpy deprecation", "Скоро устареет."],
+
+  "pandas.errors.EmptyDataError": ["pandas empty data", "Пустой CSV/файл."],
+  "pandas.errors.ParserError": ["pandas parser", "CSV не парсится."],
+  "pandas.errors.DtypeWarning": ["pandas dtype", "Типы в колонке разные."],
+  "pandas.errors.DuplicateLabelError": ["pandas dup label", "Дубликат метки."],
+  "pandas.errors.IntCastingNaNError": ["pandas int nan", "NaN в int-колонке."],
+  "pandas.errors.InvalidIndexError": ["pandas invalid index", "Неверный индекс."],
+  "pandas.errors.MergeError": ["pandas merge", "Merge упал."],
+  "pandas.errors.NullFrequencyError": ["pandas null freq", "Частота null."],
+  "pandas.errors.NumExprClobberingError": ["pandas numexpr", "Numexpr перезаписал переменную."],
+  "pandas.errors.OptionError": ["pandas option", "Опция pandas неверна."],
+  "pandas.errors.PerformanceWarning": ["pandas performance", "Медленная операция."],
+  "pandas.errors.PyperclipException": ["pandas clipboard", "Буфер обмена упал."],
+  "pandas.errors.SettingWithCopyError": ["pandas copy", "SettingWithCopy."],
+  "pandas.errors.SettingWithCopyWarning": ["pandas copy warning", "SettingWithCopy."],
+  "pandas.errors.SpecificationError": ["pandas spec", "Спецификация agg неверна."],
+  "pandas.errors.UndefinedVariableError": ["pandas undefined var", "Переменная в query не определена."],
+  "pandas.errors.UnsortedIndexError": ["pandas unsorted", "Индекс не отсортирован."],
+  "pandas.errors.UnsupportedFunctionCall": ["pandas unsupported", "Функция не поддерживается."],
+  "pandas.errors.ValueLabelTypeMismatch": ["pandas value label", "Тип метки значения неверен."],
+
+  "scipy.linalg.LinAlgError": ["scipy linalg", "Линейная алгебра упала."],
+  "scipy.linalg.LinAlgWarning": ["scipy linalg warning", "Предупреждение linalg."],
+  "scipy.optimize.OptimizeWarning": ["scipy optimize", "Оптимизация не сошлась."],
+  "scipy.sparse.SparseEfficiencyWarning": ["scipy sparse", "Неэффективная операция."],
+  "scipy.spatial.KDTree.QueryError": ["scipy KDTree", "Запрос к KDTree упал."],
+  "scipy.special.SpecialFunctionError": ["scipy special", "Спецфункция упала."],
+
+  "matplotlib.MatplotlibDeprecationWarning": ["matplotlib deprecation", "Скоро устареет."],
+  "matplotlib.cbook.deprecation.MatplotlibDeprecationWarning": ["matplotlib deprecation", "Скоро устареет."],
+  "matplotlib.rc_params.MatplotlibDeprecationWarning": ["matplotlib rc", "rcParams устарел."],
+  "matplotlib.backends.backend_agg.RendererAggError": ["matplotlib agg", "Agg-рендер упал."],
+  "matplotlib.transforms.TransformError": ["matplotlib transform", "Трансформация упала."],
+
+  "sklearn.exceptions.NotFittedError": ["sklearn not fitted", "Модель не обучена."],
+  "sklearn.exceptions.ConvergenceWarning": ["sklearn convergence", "Модель не сошлась."],
+  "sklearn.exceptions.DataConversionWarning": ["sklearn data conv", "Конвертация данных."],
+  "sklearn.exceptions.EfficiencyWarning": ["sklearn efficiency", "Неэффективная операция."],
+  "sklearn.exceptions.UndefinedMetricWarning": ["sklearn metric", "Метрика не определена."],
+  "sklearn.exceptions.FitFailedWarning": ["sklearn fit", "Fit упал."],
+
+  "torch.cuda.CUDAError": ["torch CUDA", "CUDA упала."],
+  "torch.jit.Error": ["torch JIT", "JIT-компиляция упала."],
+  "torch.nn.modules.module.ModuleAttributeError": ["torch module", "Атрибут модуля не найден."],
+  "torch.onnx.errors.ONNXExporterError": ["torch ONNX", "ONNX-экспорт упал."],
+
+  "tensorflow.errors.OpError": ["TF OpError", "Операция TF упала."],
+  "tensorflow.errors.CancelledError": ["TF cancelled", "Операция отменена."],
+  "tensorflow.errors.UnknownError": ["TF unknown", "Неизвестная ошибка."],
+  "tensorflow.errors.InvalidArgumentError": ["TF invalid arg", "Неверный аргумент."],
+  "tensorflow.errors.DeadlineExceededError": ["TF deadline", "Дедлайн истёк."],
+  "tensorflow.errors.NotFoundError": ["TF not found", "Не найдено."],
+  "tensorflow.errors.AlreadyExistsError": ["TF exists", "Уже есть."],
+  "tensorflow.errors.PermissionDeniedError": ["TF perm", "Нет прав."],
+  "tensorflow.errors.UnauthenticatedError": ["TF unauth", "Не аутентифицирован."],
+  "tensorflow.errors.ResourceExhaustedError": ["TF exhausted", "Ресурс исчерпан."],
+  "tensorflow.errors.FailedPreconditionError": ["TF precondition", "Условие не выполнено."],
+  "tensorflow.errors.AbortedError": ["TF aborted", "Прервано."],
+  "tensorflow.errors.OutOfRangeError": ["TF out of range", "Вне диапазона."],
+  "tensorflow.errors.UnimplementedError": ["TF unimpl", "Не реализовано."],
+  "tensorflow.errors.InternalError": ["TF internal", "Внутренняя ошибка."],
+  "tensorflow.errors.UnavailableError": ["TF unavailable", "Недоступно."],
+  "tensorflow.errors.DataLossError": ["TF data loss", "Потеря данных."],
+
+  "keras.errors.KerasError": ["keras ошибка", "Общая ошибка Keras."],
+
+  "pytest.UsageError": ["pytest usage", "Неверное использование pytest."],
+  "pytest.UsageError": ["pytest usage", "Неверное использование pytest."],
+  "pytest.FixtureLookupError": ["pytest fixture", "Фикстура не найдена."],
+  "pytest.CollectError": ["pytest collect", "Сбор тестов упал."],
+  "pytest.Exit": ["pytest exit", "pytest.exit() вызван."],
+  "pytest.Session.Finished": ["pytest session", "Сессия pytest завершена."],
+  "pytest.Skipped": ["pytest skipped", "Тест пропущен."],
+
+  "hypothesis.errors.HypothesisException": ["hypothesis ошибка", "Общая ошибка."],
+  "hypothesis.errors.InvalidArgument": ["hypothesis invalid arg", "Неверный аргумент."],
+  "hypothesis.errors.Unsatisfiable": ["hypothesis unsatisfiable", "Невозможно сгенерировать."],
+  "hypothesis.errors.UnsatisfiedResolution": ["hypothesis resolution", "Разрешение не найдено."],
+  "hypothesis.errors.Flaky": ["hypothesis flaky", "Тест нестабилен."],
+  "hypothesis.errors.DeadlineExceeded": ["hypothesis deadline", "Дедлайн теста истёк."],
+  "hypothesis.errors.FailedHealthCheck": ["hypothesis health", "Health check провалился."],
+  "hypothesis.errors.StopTest": ["hypothesis stop", "Остановка теста."],
+  "hypothesis.errors.InvalidState": ["hypothesis state", "Неверное состояние."],
+  "hypothesis.errors.Frozen": ["hypothesis frozen", "Объект заморожен."],
+  "hypothesis.errors.InternalError": ["hypothesis internal", "Внутренняя ошибка."],
+  "hypothesis.errors.HypothesisWarning": ["hypothesis warning", "Предупреждение."],
+  "hypothesis.errors.NonInteractiveExampleWarning": ["hypothesis example", "Пример вне теста."],
+  "hypothesis.errors.HypothesisDeprecationWarning": ["hypothesis deprecation", "Скоро устареет."],
+
+  "coverage.misc.CoverageException": ["coverage ошибка", "Общая ошибка coverage."],
+  "coverage.misc.NoSource": ["coverage no source", "Исходник не найден."],
+  "coverage.misc.NoData": ["coverage no data", "Нет данных покрытия."],
+  "coverage.misc.DebugOptionsError": ["coverage debug", "Опции debug неверны."],
+
+  "mypy.errors.CompileError": ["mypy compile", "Компиляция mypy упала."],
+
+  "pylint.lint.utils.FatalError": ["pylint fatal", "Фатальная ошибка pylint."],
+  "pylint.exceptions.InvalidMessageError": ["pylint msg", "Неверное сообщение."],
+  "pylint.exceptions.UnknownMessageError": ["pylint unknown msg", "Неизвестное сообщение."],
+
+  "flake8.exceptions.PluginExecutionFailed": ["flake8 plugin", "Плагин flake8 упал."],
+
+  "black.InvalidConfiguration": ["black config", "Конфиг black неверен."],
+  "black.NothingChanged": ["black nothing", "Нечего менять."],
+
+  "isort.exceptions.FileSkipped": ["isort skipped", "Файл пропущен."],
+  "isort.exceptions.UnsupportedEncoding": ["isort encoding", "Кодировка не поддерживается."],
+  "isort.exceptions.UnableToParseFile": ["isort parse", "Не смог распарсить."],
+  "isort.exceptions.UnreadableConfig": ["isort config", "Конфиг нечитаем."],
+  "isort.exceptions.ProfileDoesNotExist": ["isort profile", "Профиль не найден."],
+
+  "yaml.YAMLError": ["YAML ошибка", "Общая ошибка YAML."],
+  "yaml.MarkedYAMLError": ["YAML marked", "Ошибка с позицией."],
+  "yaml.scanner.ScannerError": ["YAML scanner", "Сканер YAML упал."],
+  "yaml.parser.ParserError": ["YAML parser", "Парсер YAML упал."],
+  "yaml.constructor.ConstructorError": ["YAML constructor", "Конструктор YAML упал."],
+  "yaml.representer.RepresenterError": ["YAML representer", "Репрезентер YAML упал."],
+  "yaml.resolver.ResolverError": ["YAML resolver", "Резолвер YAML упал."],
+  "yaml.emitter.EmitterError": ["YAML emitter", "Эмиттер YAML упал."],
+  "yaml.serializer.SerializerError": ["YAML serializer", "Сериализатор YAML упал."],
+  "yaml.composer.ComposerError": ["YAML composer", "Композер YAML упал."],
+  "yaml.reader.ReaderError": ["YAML reader", "Ридер YAML упал."],
+  "yaml.tokens.TokenError": ["YAML token", "Ошибка токена."],
+  "yaml.events.EventError": ["YAML event", "Ошибка события."],
+
+  "toml.TomlDecodeError": ["TOML decode", "TOML не парсится."],
+  "tomllib.TOMLDecodeError": ["TOML decode", "TOML не парсится."],
+
+  "dotenv.errors.InvalidPath": ["dotenv path", "Путь к .env неверен."],
+  "dotenv.errors.ParseError": ["dotenv parse", ".env не парсится."],
+
+  "marshmallow.exceptions.ValidationError": ["marshmallow валидация", "Схема не прошла."],
+  "marshmallow.exceptions.RegistryError": ["marshmallow registry", "Ошибка реестра."],
+  "marshmallow.exceptions.StringNotCollectionError": ["marshmallow str", "Строка не коллекция."],
+  "marshmallow.exceptions.FieldInstanceResolutionError": ["marshmallow field", "Не смог разрешить поле."],
+
+  "attrs.exceptions.AttrsAttributeNotFoundError": ["attrs attr", "Атрибут attrs не найден."],
+  "attrs.exceptions.FrozenInstanceError": ["attrs frozen", "Инстанс заморожен."],
+  "attrs.exceptions.NotAnAttrsClassError": ["attrs not attrs", "Не attrs-класс."],
+  "attrs.exceptions.UnannotatedAttributeError": ["attrs unannotated", "Неаннотированный атрибут."],
+  "attrs.exceptions.SettersNotAllowedError": ["attrs setters", "setters запрещены."],
+
+  "structlog.exceptions.DropEvent": ["structlog drop", "Событие отброшено."],
+  "structlog.exceptions.BoundLoggerError": ["structlog bound", "BoundLogger упал."],
+
+  "loguru.Error": ["loguru ошибка", "Loguru упал."],
+
+  "sentry_sdk.utils.BadDsn": ["sentry dsn", "DSN кривой."],
+  "sentry_sdk.utils.ServerlessTimeoutWarning": ["sentry timeout", "Serverless таймаут."],
+
+  "prometheus_client.ValueError": ["prometheus value", "Значение метрики неверно."],
+
+  "opentelemetry.util.exceptions.UsageError": ["otel usage", "Неверное использование OTel."],
+
+  "grpc.RpcError": ["gRPC ошибка", "Общая ошибка gRPC."],
+  "grpc.aio.AioRpcError": ["gRPC aio", "Async gRPC упал."],
+  "grpc.aio.InternalError": ["gRPC internal", "Внутренняя ошибка gRPC."],
+  "grpc.aio.InvalidMetadata": ["gRPC metadata", "Метаданные неверны."],
+
+  "thrift.Thrift.TException": ["Thrift ошибка", "Общая ошибка Thrift."],
+  "thrift.transport.TTransport.TTransportException": ["Thrift transport", "Транспорт упал."],
+  "thrift.protocol.TProtocol.TProtocolException": ["Thrift protocol", "Протокол упал."],
+
+  "zmq.ZMQError": ["ZMQ ошибка", "Общая ошибка ZeroMQ."],
+  "zmq.Again": ["ZMQ again", "EAGAIN — попробуй позже."],
+  "zmq.ContextTerminated": ["ZMQ context", "Контекст завершён."],
+  "zmq.ZMQBindError": ["ZMQ bind", "Не смог забиндить."],
+  "zmq.NotDone": ["ZMQ not done", "Операция не завершена."],
+
+  "pika.exceptions.AMQPError": ["pika AMQP", "Общая ошибка AMQP."],
+  "pika.exceptions.AMQPConnectionError": ["pika connection", "Не подключился к RabbitMQ."],
+  "pika.exceptions.AMQPChannelError": ["pika channel", "Канал AMQP упал."],
+  "pika.exceptions.AuthenticationError": ["pika auth", "Auth провалился."],
+  "pika.exceptions.ChannelClosed": ["pika channel closed", "Канал закрыт."],
+  "pika.exceptions.ChannelClosedByBroker": ["pika broker closed", "Брокер закрыл канал."],
+  "pika.exceptions.ChannelClosedByClient": ["pika client closed", "Клиент закрыл канал."],
+  "pika.exceptions.ConnectionClosed": ["pika conn closed", "Соединение закрыто."],
+  "pika.exceptions.ConnectionClosedByBroker": ["pika broker conn", "Брокер закрыл соединение."],
+  "pika.exceptions.ConnectionClosedByClient": ["pika client conn", "Клиент закрыл соединение."],
+  "pika.exceptions.ConnectionOpenAborted": ["pika conn abort", "Открытие соединения прервано."],
+  "pika.exceptions.ConsumerCancelled": ["pika consumer", "Consumer отменён."],
+  "pika.exceptions.DuplicateConsumerTag": ["pika dup consumer", "Дубликат consumer tag."],
+  "pika.exceptions.IncompatibleProtocolError": ["pika protocol", "Протокол несовместим."],
+  "pika.exceptions.ProbableAuthenticationError": ["pika prob auth", "Возможно auth провалился."],
+  "pika.exceptions.ProbableAccessDeniedError": ["pika prob access", "Возможно доступ запрещён."],
+  "pika.exceptions.StreamLostError": ["pika stream", "Поток потерян."],
+  "pika.exceptions.UnexpectedChannelError": ["pika unexpected channel", "Неожиданная ошибка канала."],
+  "pika.exceptions.UnroutableError": ["pika unroutable", "Сообщение не маршрутизируется."],
+  "pika.exceptions.NackError": ["pika nack", "Сообщение nack'нуто."],
+
+  "kombu.exceptions.KombuError": ["kombu ошибка", "Общая ошибка."],
+
+  "aiofiles.errors.AiofilesError": ["aiofiles ошибка", "Общая ошибка."],
+
+  "watchdog.observers.api.ObservedEvent": ["watchdog event", "Событие наблюдения."],
+  "watchdog.utils.UnsupportedLibc": ["watchdog libc", "libc не поддерживается."],
+
+  "psutil.Error": ["psutil ошибка", "Общая ошибка."],
+  "psutil.NoSuchProcess": ["psutil no process", "Процесса нет."],
+  "psutil.ZombieProcess": ["psutil zombie", "Процесс-зомби."],
+  "psutil.AccessDenied": ["psutil access", "Нет прав."],
+  "psutil.TimeoutExpired": ["psutil timeout", "Таймаут."],
+
+  "netifaces.error": ["netifaces ошибка", "Сетевой интерфейс упал."],
+  "scapy.error.Scapy_Exception": ["scapy ошибка", "Общая ошибка scapy."],
+
+  "pyautogui.FailSafeException": ["pyautogui failsafe", "Мышь в углу — failsafe."],
+
+  "PIL.Image.DecompressionBombError": ["PIL bomb", "Изображение слишком большое."],
+  "PIL.Image.DecompressionBombWarning": ["PIL bomb warning", "Изображение большое."],
+  "PIL.ImageFile.IOError": ["PIL io", "Ошибка чтения изображения."],
+  "PIL.ImageFont.IOSanitizerError": ["PIL font", "Шрифт не прошёл проверку."],
+
+  "cv2.error": ["OpenCV ошибка", "Общая ошибка OpenCV."],
+
+  "simplejson.JSONDecodeError": ["simplejson decode", "JSON не парсится."],
+  "ujson.JSONDecodeError": ["ujson decode", "JSON не парсится."],
+  "orjson.JSONDecodeError": ["orjson decode", "JSON не парсится."],
+
+  "msgpack.exceptions.MsgpackException": ["msgpack ошибка", "Общая ошибка."],
+  "msgpack.exceptions.FormatError": ["msgpack format", "Формат неверен."],
+  "msgpack.exceptions.StackError": ["msgpack stack", "Стек переполнен."],
+  "msgpack.exceptions.ExtraData": ["msgpack extra", "Лишние данные после объекта."],
+  "msgpack.exceptions.BufferFull": ["msgpack buffer", "Буфер полон."],
+  "msgpack.exceptions.OutOfData": ["msgpack out of data", "Данные кончились."],
+  "msgpack.exceptions.UnpackValueError": ["msgpack unpack", "Не смог распаковать."],
+  "msgpack.exceptions.PackValueError": ["msgpack pack", "Не смог упаковать."],
+  "msgpack.exceptions.PackOverflowError": ["msgpack overflow", "Переполнение при упаковке."],
+
+  "cbor2.CBORDecodeError": ["cbor2 decode", "CBOR не парсится."],
+  "cbor2.CBOREncodeError": ["cbor2 encode", "CBOR не кодируется."],
+  "cbor2.CBORDecodeEOF": ["cbor2 eof", "Неожиданный конец CBOR."],
+
+  "avro.errors.AvroException": ["avro ошибка", "Общая ошибка Avro."],
+  "avro.errors.SchemaParseException": ["avro schema", "Схема не парсится."],
+  "avro.errors.InvalidAvroBinaryEncoding": ["avro binary", "Бинарная кодировка неверна."],
+
+  "protobuf.message.DecodeError": ["protobuf decode", "Protobuf не парсится."],
+  "protobuf.message.EncodeError": ["protobuf encode", "Protobuf не кодируется."],
+
+  "thrift.Thrift.TException": ["Thrift ошибка", "Общая ошибка Thrift."],
+
+  "jwt.exceptions.PyJWTError": ["PyJWT ошибка", "Общая ошибка."],
+
+  "authlib.jose.errors.DecodeError": ["authlib decode", "JOSE не парсится."],
+  "authlib.jose.errors.BadSignatureError": ["authlib signature", "Подпись неверна."],
+  "authlib.jose.errors.ExpiredTokenError": ["authlib expired", "Токен протух."],
+  "authlib.jose.errors.InvalidClaimError": ["authlib claim", "Claim неверен."],
+  "authlib.jose.errors.MissingClaimError": ["authlib missing claim", "Нет обязательного claim."],
+  "authlib.jose.errors.InsecureClaimError": ["authlib insecure claim", "Небезопасный claim."],
+  "authlib.oauth2.rfc6749.errors.InvalidClientError": ["authlib client", "Неверный client_id."],
+  "authlib.oauth2.rfc6749.errors.InvalidGrantError": ["authlib grant", "Неверный grant."],
+  "authlib.oauth2.rfc6749.errors.InvalidRequestError": ["authlib request", "Запрос кривой."],
+  "authlib.oauth2.rfc6749.errors.InvalidScopeError": ["authlib scope", "Неверный scope."],
+  "authlib.oauth2.rfc6749.errors.UnauthorizedClientError": ["authlib unauthorized", "Клиент не авторизован."],
+  "authlib.oauth2.rfc6749.errors.UnsupportedGrantTypeError": ["authlib grant type", "grant_type не поддерживается."],
+  "authlib.oauth2.rfc6749.errors.UnsupportedResponseTypeError": ["authlib response type", "response_type не поддерживается."],
+  "authlib.oauth2.rfc6749.errors.AccessDeniedError": ["authlib access", "Доступ запрещён."],
+
+  "httpcore.ConnectError": ["httpcore connect", "Не подключился."],
+  "httpcore.ConnectTimeout": ["httpcore connect timeout", "Подключение таймануло."],
+  "httpcore.ReadTimeout": ["httpcore read timeout", "Чтение таймануло."],
+  "httpcore.WriteTimeout": ["httpcore write timeout", "Запись тайманула."],
+  "httpcore.PoolTimeout": ["httpcore pool timeout", "Пул тайманул."],
+  "httpcore.NetworkError": ["httpcore network", "Сеть упала."],
+  "httpcore.ProtocolError": ["httpcore protocol", "Протокол сломан."],
+  "httpcore.ProxyError": ["httpcore proxy", "Прокси упал."],
+
+  "trio.ClosedResourceError": ["trio closed", "Ресурс закрыт."],
+  "trio.BusyResourceError": ["trio busy", "Ресурс занят."],
+  "trio.Cancelled": ["trio cancelled", "Отменено."],
+  "trio.WouldBlock": ["trio would block", "Заблокируется."],
+  "trio.EndOfChannel": ["trio end channel", "Канал закрыт."],
+
+  "anyio.BrokenResourceError": ["anyio broken", "Ресурс сломан."],
+  "anyio.BusyResourceError": ["anyio busy", "Ресурс занят."],
+  "anyio.ClosedResourceError": ["anyio closed", "Ресурс закрыт."],
+  "anyio.EndOfStream": ["anyio eos", "Конец потока."],
+  "anyio.ExceptionGroup": ["anyio exception group", "Группа исключений."],
+  "anyio.TypedAttributeLookupError": ["anyio typed attr", "Атрибут не найден."],
+
+  "uvicorn.config.ConfigError": ["uvicorn config", "Конфиг uvicorn неверен."],
+  "uvicorn.lifespan.on.LifespanOn": ["uvicorn lifespan", "Lifespan упал."],
+  "uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware": ["uvicorn proxy", "Proxy middleware упал."],
+
+  "gunicorn.errors.HaltServer": ["gunicorn halt", "Сервер остановлен."],
+  "gunicorn.errors.AppImportError": ["gunicorn import", "Приложение не импортируется."],
+  "gunicorn.errors.ConfigError": ["gunicorn config", "Конфиг неверен."],
+
+  "daphne.server.ServerError": ["daphne server", "Сервер daphne упал."],
+
+  "hypercorn.errors.ProtocolError": ["hypercorn protocol", "Протокол сломан."],
+  "hypercorn.errors.InvalidConfigError": ["hypercorn config", "Конфиг неверен."],
+
+  "cherrypy.CherryPyError": ["cherrypy ошибка", "Общая ошибка."],
+  "cherrypy.HTTPError": ["cherrypy HTTP", "HTTP-ошибка."],
+  "cherrypy.HTTPRedirect": ["cherrypy redirect", "Редирект."],
+  "cherrypy.InternalRedirect": ["cherrypy internal redirect", "Внутренний редирект."],
+
+  "tornado.web.HTTPError": ["tornado HTTP", "HTTP-ошибка."],
+  "tornado.web.MissingArgumentError": ["tornado arg", "Не хватает аргумента."],
+  "tornado.web.Finish": ["tornado finish", "Завершение handler."],
+  "tornado.web.RedirectHandler": ["tornado redirect", "Редирект."],
+  "tornado.httpclient.HTTPError": ["tornado http client", "HTTP-клиент упал."],
+  "tornado.httpclient.HTTPTimeoutError": ["tornado timeout", "Таймаут."],
+  "tornado.ioloop.TimeoutError": ["tornado ioloop timeout", "Таймаут ioloop."],
+  "tornado.gen.TimeoutError": ["tornado gen timeout", "Таймаут gen."],
+  "tornado.iostream.StreamClosedError": ["tornado stream", "Поток закрыт."],
+  "tornado.iostream.UnsatisfiableReadError": ["tornado read", "Чтение невозможно."],
+  "tornado.tcpserver.TCPServer": ["tornado tcp", "TCP-сервер упал."],
+
+  "twisted.internet.error.ConnectError": ["twisted connect", "Не подключился."],
+  "twisted.internet.error.ConnectionRefusedError": ["twisted refused", "В соединении отказано."],
+  "twisted.internet.error.ConnectionDone": ["twisted done", "Соединение закрыто."],
+  "twisted.internet.error.ConnectionLost": ["twisted lost", "Соединение потеряно."],
+  "twisted.internet.error.ConnectionFailed": ["twisted failed", "Соединение упало."],
+  "twisted.internet.error.DNSLookupError": ["twisted dns", "DNS не резолвит."],
+  "twisted.internet.error.TimeoutError": ["twisted timeout", "Таймаут."],
+  "twisted.internet.error.ConnectBindError": ["twisted bind", "Не смог забиндить."],
+  "twisted.internet.error.InvalidAddressError": ["twisted address", "Адрес неверен."],
+  "twisted.internet.error.ReactorNotRunning": ["twisted reactor", "Реактор не запущен."],
+  "twisted.internet.error.ReactorAlreadyRunning": ["twisted reactor running", "Реактор уже запущен."],
+  "twisted.internet.error.ReactorNotRestartable": ["twisted reactor restart", "Реактор не перезапускается."],
+  "twisted.internet.defer.TimeoutError": ["twisted defer timeout", "Таймаут defer."],
+  "twisted.internet.defer.CancelledError": ["twisted defer cancelled", "Defer отменён."],
+  "twisted.web.error.Error": ["twisted web", "HTTP-ошибка."],
+  "twisted.web.error.SchemeNotSupported": ["twisted scheme", "Схема не поддерживается."],
+  "twisted.web.error.Redirect": ["twisted redirect", "Редирект."],
+  "twisted.web.error.FlattenError": ["twisted flatten", "Flatten упал."],
+  "twisted.web.client.ResponseFailed": ["twisted response", "Ответ не получен."],
+  "twisted.web.client.ResponseNeverReceived": ["twisted no response", "Ответ не пришёл."],
+  "twisted.web.client.RequestGenerationFailed": ["twisted request gen", "Генерация запроса упала."],
+  "twisted.protocols.tls.TLSHandshakeError": ["twisted tls", "TLS-рукопожатие упало."],
+
+  "gevent.timeout.Timeout": ["gevent timeout", "Таймаут gevent."],
+  "gevent.hub.LoopExit": ["gevent loop exit", "Цикл вышел."],
+
+  "eventlet.timeout.Timeout": ["eventlet timeout", "Таймаут eventlet."],
+
+  "curio.errors.TaskTimeout": ["curio timeout", "Таймаут curio."],
+  "curio.errors.TaskCancelled": ["curio cancelled", "Задача отменена."],
+  "curio.errors.SyncTimeoutError": ["curio sync timeout", "Синхронный таймаут."],
+  "curio.errors.KernelError": ["curio kernel", "Ядро curio упало."],
+
+  "aiostream.errors.StreamError": ["aiostream ошибка", "Стрим упал."],
+
+  "asyncer.AsyncError": ["asyncer ошибка", "Общая ошибка."],
+
+  "aiocontextvars.ContextError": ["aiocontextvars ошибка", "Контекст упал."],
+
+  "contextvars.TokenError": ["contextvars token", "Токен контекста неверен."],
+
+  "greenlet.GreenletExit": ["greenlet exit", "Зелёный поток вышел."],
+
+  "gevent.greenlet.GreenletExit": ["gevent greenlet exit", "Greenlet вышел."],
+
+  "multiprocessing.context.AuthenticationError": ["mp auth", "Auth между процессами."],
+  "multiprocessing.managers.RemoteError": ["mp remote", "Удалённая ошибка менеджера."],
+  "multiprocessing.shared_memory.SharedMemoryError": ["mp shared mem", "Shared memory упала."],
+
+  "concurrent.futures.process.BrokenProcessPool": ["ProcessPool мёртв", "Воркер убит OOM или crash."],
+  "concurrent.futures.thread.BrokenThreadPool": ["ThreadPool мёртв", "Все воркеры отвалились."],
+
+  "distutils.errors.DistutilsError": ["distutils ошибка", "setup.py упал."],
+  "distutils.errors.DistutilsSetupError": ["distutils setup", "setup() кривой."],
+  "distutils.errors.DistutilsOptionError": ["distutils option", "Опция кривая."],
+  "distutils.errors.DistutilsArgError": ["distutils arg", "Аргумент кривой."],
+  "distutils.errors.DistutilsFileError": ["distutils file", "Файл не найден."],
+  "distutils.errors.DistutilsPlatformError": ["distutils platform", "Платформа не поддерживается."],
+  "distutils.errors.DistutilsExecError": ["distutils exec", "Внешняя команда упала."],
+  "distutils.errors.DistutilsClassError": ["distutils class", "Класс кривой."],
+  "distutils.errors.DistutilsModuleError": ["distutils module", "Модуль не найден."],
+  "distutils.errors.DistutilsInternalError": ["distutils internal", "Внутренняя ошибка."],
+  "distutils.errors.CCompilerError": ["distutils compiler", "Компилятор упал."],
+  "distutils.errors.CompileError": ["distutils compile", "Компиляция упала."],
+  "distutils.errors.LinkError": ["distutils link", "Линковка упала."],
+  "distutils.errors.LibError": ["distutils lib", "Библиотека не найдена."],
+  "distutils.errors.PreprocessError": ["distutils preprocess", "Препроцессинг упал."],
+  "distutils.errors.UnknownFileError": ["distutils unknown file", "Неизвестный файл."],
+
+  "setuptools.errors.SetuptoolsError": ["setuptools ошибка", "setup() кривой."],
+  "setuptools.errors.SetupError": ["setuptools setup", "setup() упал."],
+  "setuptools.errors.OptionError": ["setuptools option", "Опция кривая."],
+  "setuptools.errors.FileError": ["setuptools file", "Файл не найден."],
+  "setuptools.errors.PlatformError": ["setuptools platform", "Платформа не поддерживается."],
+  "setuptools.errors.ExecError": ["setuptools exec", "Внешняя команда упала."],
+  "setuptools.errors.PackageDiscoveryError": ["setuptools discovery", "Не нашёл пакеты."],
+
+  "wheel.bdist_wheel.WheelError": ["wheel ошибка", "Общая ошибка wheel."],
+
+  "pip._vendor.distlib.DistlibException": ["distlib ошибка", "Общая ошибка distlib."],
+  "pip._vendor.packaging.requirements.InvalidRequirement": ["pip requirement", "Требование кривое."],
+  "pip._vendor.packaging.specifiers.InvalidSpecifier": ["pip specifier", "Спецификатор кривой."],
+  "pip._vendor.packaging.version.InvalidVersion": ["pip version", "Версия кривая."],
+  "pip._vendor.packaging.markers.InvalidMarker": ["pip marker", "Маркер кривой."],
+  "pip._vendor.packaging.tags.InvalidTag": ["pip tag", "Тег кривой."],
+
+  "pkg_resources.DistributionNotFound": ["pkg_resources dist", "Дистрибутив не найден."],
+  "pkg_resources.VersionConflict": ["pkg_resources version", "Конфликт версий."],
+  "pkg_resources.UnknownExtra": ["pkg_resources extra", "Неизвестный extra."],
+  "pkg_resources.ResolutionError": ["pkg_resources resolution", "Разрешение зависимостей упало."],
+  "pkg_resources.ExtractionError": ["pkg_resources extraction", "Извлечение упало."],
+
+  "importlib.metadata.PackageNotFoundError": ["importlib package", "Пакет не найден."],
+
+  "importlib_resources.Error": ["importlib_resources ошибка", "Общая ошибка."],
+
+  "zipimport.ZipImportError": ["zipimport ошибка", "Не смог импортировать из zip."],
+
+  "runpy.RunpyError": ["runpy ошибка", "Запуск модуля упал."],
+
+  "code.InteractiveInterpreter": ["code interpreter", "Интерпретатор упал."],
+
+  "codeop.CommandCompiler": ["codeop compiler", "Компилятор команд упал."],
+
+  "tokenize.TokenError": ["tokenize ошибка", "Токенизатор упал."],
+  "tokenize.StopTokenizing": ["tokenize stop", "Остановка токенизации."],
+
+  "ast.Error": ["ast ошибка", "AST упал."],
+
+  "symtable.SymbolTableError": ["symtable ошибка", "Таблица символов упала."],
+
+  "dis.DisError": ["dis ошибка", "Дизассемблер упал."],
+
+  "inspect.EndOfBlock": ["inspect end", "Конец блока."],
+
+  "linecache.Error": ["linecache ошибка", "Кеш строк упал."],
+
+  "traceback.TracebackException": ["traceback ошибка", "Traceback упал."],
+
+  "gc.GarbageCollectorError": ["gc ошибка", "Сборщик мусора упал."],
+
+  "weakref.ReferenceError": ["weakref ошибка", "Слабая ссылка упала."],
+
+  "atexit.Error": ["atexit ошибка", "Обработчик выхода упал."],
+
+  "gc.callbacks": ["gc callbacks", "Callback GC упал."],
+
+  "sys.UnraisableHookArgs": ["sys unraisable", "Неуловимое исключение."],
+
+  "threading.BrokenBarrierError": ["threading barrier", "Барьер сломан."],
+
+  "queue.SimpleQueue": ["queue simple", "SimpleQueue упал."],
+
+  "sched.Error": ["sched ошибка", "Планировщик упал."],
+
+  "select.error": ["select ошибка", "select() упал."],
+
+  "selectors.SelectorError": ["selectors ошибка", "Селектор упал."],
+
+  "mmap.error": ["mmap ошибка", "mmap() упал."],
+
+  "shutil.Error": ["shutil ошибка", "shutil упал."],
+
+  "tempfile.TemporaryDirectoryError": ["tempfile ошибка", "Временная директория упала."],
+
+  "fnmatch.error": ["fnmatch ошибка", "fnmatch упал."],
+
+  "glob.error": ["glob ошибка", "glob упал."],
+
+  "shlex.ShlexError": ["shlex ошибка", "shlex упал."],
+
+  "string.TemplateError": ["string template", "Template упал."],
+
+  "textwrap.TextWrapper": ["textwrap wrapper", "TextWrapper упал."],
+
+  "difflib.Differ": ["difflib differ", "Differ упал."],
+
+  "pprint.PrettyPrinter": ["pprint printer", "PrettyPrinter упал."],
+
+  "reprlib.Repr": ["reprlib repr", "Repr упал."],
+
+  "enum.EnumMeta": ["enum meta", "EnumMeta упал."],
+
+  "typing.TypeVar": ["typing typevar", "TypeVar упал."],
+
+  "dataclasses.Field": ["dataclasses field", "Field упал."],
+
+  "abc.ABCMeta": ["abc meta", "ABCMeta упал."],
+
+  "contextlib.AbstractContextManager": ["contextlib abstract", "AbstractContextManager упал."],
+
+  "copyreg.dispatch_table": ["copyreg dispatch", "dispatch_table упал."],
+
+  "pickle.Pickler": ["pickle pickler", "Pickler упал."],
+
+  "pickle.Unpickler": ["pickle unpickler", "Unpickler упал."],
+
+  "marshal.loads": ["marshal loads", "marshal загрузка упала."],
+
+  "dbm.error": ["dbm ошибка", "dbm упал."],
+
+  "shelve.Shelf": ["shelve shelf", "Shelf упал."],
+
+  "csv.Error": ["csv ошибка", "csv упал."],
+
+  "configparser.Error": ["configparser ошибка", "configparser упал."],
+
+  "netrc.NetrcParseError": ["netrc parse", "netrc не парсится."],
+
+  "xdrlib.UnpackError": ["xdrlib unpack", "xdrlib не распаковал."],
+  "xdrlib.PackError": ["xdrlib pack", "xdrlib не упаковал."],
+
+  "binascii.Error": ["binascii ошибка", "binascii упал."],
+
+  "quopri.Error": ["quopri ошибка", "quopri упал."],
+
+  "uu.Error": ["uu ошибка", "uu упал."],
+
+  "base64.binascii.Error": ["base64 binascii", "base64 упал."],
+
+  "html.entities.entitydefs": ["html entities", "entities упали."],
+
+  "urlparse.ParseResult": ["urlparse result", "ParseResult упал."],
+
+  "urllib.parse.SplitResult": ["urllib parse", "SplitResult упал."],
+
+  "http.cookiejar.LoadError": ["cookiejar load", "Cookiejar не загрузился."],
+
+  "ftplib.error_temp": ["ftplib temp", "FTP временная ошибка."],
+  "ftplib.error_perm": ["ftplib perm", "FTP perm-ошибка."],
+  "ftplib.error_proto": ["ftplib proto", "FTP протокол."],
+  "ftplib.error_reply": ["ftplib reply", "FTP ответ."],
+
+  "smtplib.SMTPException": ["smtplib ошибка", "Общая ошибка SMTP."],
+  "smtplib.SMTPServerDisconnected": ["smtplib disconnect", "SMTP отвалился."],
+  "smtplib.SMTPResponseException": ["smtplib response", "SMTP ответ."],
+  "smtplib.SMTPSenderRefused": ["smtplib sender", "SMTP отправитель отклонён."],
+  "smtplib.SMTPRecipientsRefused": ["smtplib recipients", "SMTP получатели отклонены."],
+  "smtplib.SMTPDataError": ["smtplib data", "SMTP данные."],
+  "smtplib.SMTPConnectError": ["smtplib connect", "SMTP не подключился."],
+  "smtplib.SMTPHeloError": ["smtplib helo", "SMTP HELO упал."],
+  "smtplib.SMTPAuthenticationError": ["smtplib auth", "SMTP auth провалился."],
+  "smtplib.SMTPNotSupportedError": ["smtplib not supported", "SMTP не поддерживает."],
+
+  "poplib.error_proto": ["poplib proto", "POP3 протокол."],
+
+  "imaplib.IMAP4.error": ["imaplib ошибка", "IMAP упал."],
+  "imaplib.IMAP4.abort": ["imaplib abort", "IMAP прерван."],
+  "imaplib.IMAP4.readonly": ["imaplib readonly", "IMAP только чтение."],
+
+  "nntplib.NNTPError": ["nntplib ошибка", "NNTP упал."],
+  "nntplib.NNTPReplyError": ["nntplib reply", "NNTP ответ."],
+  "nntplib.NNTPTemporaryError": ["nntplib temp", "NNTP временная ошибка."],
+  "nntplib.NNTPPermanentError": ["nntplib perm", "NNTP perm-ошибка."],
+  "nntplib.NNTPProtocolError": ["nntplib proto", "NNTP протокол."],
+  "nntplib.NNTPDataError": ["nntplib data", "NNTP данные."],
+
+  "telnetlib.EOFError": ["telnetlib eof", "Telnet EOF."],
+
+  "socketserver.TimeoutError": ["socketserver timeout", "Таймаут socketserver."],
+
+  "xmlrpc.client.Fault": ["xmlrpc fault", "XML-RPC fault."],
+  "xmlrpc.client.ProtocolError": ["xmlrpc protocol", "XML-RPC протокол."],
+  "xmlrpc.client.ResponseError": ["xmlrpc response", "XML-RPC ответ."],
+  "xmlrpc.server.Fault": ["xmlrpc server fault", "XML-RPC сервер fault."],
+
+  "ipaddress.AddressValueError": ["ipaddress address", "Адрес неверен."],
+  "ipaddress.NetmaskValueError": ["ipaddress netmask", "Маска неверна."],
+
+  "audioop.error": ["audioop ошибка", "audioop упал."],
+
+  "chunk.Error": ["chunk ошибка", "chunk упал."],
+
+  "colorsys.Error": ["colorsys ошибка", "colorsys упал."],
+
+  "cProfile.Profile": ["cProfile profile", "Profile упал."],
+
+  "crypt.error": ["crypt ошибка", "crypt упал."],
+
+  "decimal.InvalidOperation": ["decimal invalid", "Неверная операция decimal."],
+  "decimal.DivisionByZero": ["decimal /0", "Деление на ноль в decimal."],
+  "decimal.Overflow": ["decimal overflow", "Переполнение decimal."],
+  "decimal.Underflow": ["decimal underflow", "Недополнение decimal."],
+  "decimal.InvalidContext": ["decimal context", "Неверный контекст decimal."],
+  "decimal.Subnormal": ["decimal subnormal", "Субнормальное decimal."],
+  "decimal.Rounded": ["decimal rounded", "Decimal округлён."],
+  "decimal.Clamped": ["decimal clamped", "Decimal обрезан."],
+
+  "fractions.Fraction": ["fractions ошибка", "Fraction упал."],
+
+  "random.SystemRandom": ["random system", "SystemRandom упал."],
+
+  "statistics.StatisticsError": ["statistics ошибка", "Statistics упал."],
+
+  "itertools.count": ["itertools count", "count упал."],
+
+  "functools.WRAPPER_ASSIGNMENTS": ["functools wrapper", "wrapper упал."],
+
+  "operator.attrgetter": ["operator attr", "attrgetter упал."],
+
+  "collections.abc.Sized": ["collections abc", "Sized упал."],
+
+  "heapq.heapify": ["heapq heapify", "heapify упал."],
+
+  "bisect.BisectError": ["bisect ошибка", "bisect упал."],
+
+  "array.ArrayType": ["array type", "ArrayType упал."],
+
+  "weakref.WeakValueDictionary": ["weakref dict", "WeakValueDictionary упал."],
+
+  "types.MappingProxyType": ["types proxy", "MappingProxyType упал."],
+
+  "copy.copy": ["copy copy", "copy упал."],
+
+  "pprint.saferepr": ["pprint saferepr", "saferepr упал."],
+
+  "reprlib.repr": ["reprlib repr", "repr упал."],
+
+  "numbers.Number": ["numbers number", "Number упал."],
+
+  "cmath.DomainError": ["cmath domain", "cmath domain error."],
+
+  "math.DomainError": ["math domain", "math domain error."],
+
+  "time.error": ["time ошибка", "time упал."],
+
+  "datetime.time": ["datetime time", "time упал."],
+
+  "calendar.IllegalMonthError": ["calendar month", "Неверный месяц."],
+  "calendar.IllegalWeekdayError": ["calendar weekday", "Неверный день недели."],
+
+  "locale.Error": ["locale ошибка", "locale упал."],
+
+  "gettext.GNUTranslations": ["gettext GNU", "GNUTranslations упал."],
+
+  "gettext.NullTranslations": ["gettext null", "NullTranslations упал."],
+
+  "readline.error": ["readline ошибка", "readline упал."],
+
+  "rlcompleter.Completer": ["rlcompleter completer", "Completer упал."],
+
+  "cmd.Cmd": ["cmd Cmd", "Cmd упал."],
+
+  "shlex.Shlex": ["shlex Shlex", "Shlex упал."],
+
+  "tkinter.TclError": ["tkinter Tcl", "TclError упал."],
+
+  "turtle.TurtleGraphicsError": ["turtle graphics", "TurtleGraphicsError упал."],
+
+  "curses.error": ["curses ошибка", "curses упал."],
+
+  "platform.Error": ["platform ошибка", "platform упал."],
+
+  "sys.version_info": ["sys version", "version_info упал."],
+
+  "os.stat_result": ["os stat", "stat_result упал."],
+
+  "posixpath.error": ["posixpath ошибка", "posixpath упал."],
+
+  "ntpath.error": ["ntpath ошибка", "ntpath упал."],
+
+  "genericpath.error": ["genericpath ошибка", "genericpath упал."],
+
+  "macpath.error": ["macpath ошибка", "macpath упал."],
+
+  "pathlib.Path": ["pathlib Path", "Path упал."],
+
+  "glob.glob": ["glob glob", "glob упал."],
+
+  "fnmatch.fnmatch": ["fnmatch fnmatch", "fnmatch упал."],
+
+  "linecache.cache": ["linecache cache", "cache упал."],
+
+  "tokenize.TokenError": ["tokenize Token", "TokenError упал."],
+
+  "token.tok_name": ["token tok_name", "tok_name упал."],
+
+  "keyword.kwlist": ["keyword kwlist", "kwlist упал."],
+
+  "ast.AST": ["ast AST", "AST упал."],
+
+  "symtable.SymbolTable": ["symtable SymbolTable", "SymbolTable упал."],
+
+  "py_compile.PyCompileError": ["py_compile ошибка", "PyCompileError упал."],
+
+  "compileall.CompileError": ["compileall ошибка", "CompileError упал."],
+
+  "zipfile.BadZipFile": ["zipfile BadZip", "BadZipFile упал."],
+  "zipfile.LargeZipFile": ["zipfile LargeZip", "LargeZipFile упал."],
+
+  "tarfile.TarError": ["tarfile Tar", "TarError упал."],
+  "tarfile.ReadError": ["tarfile Read", "ReadError упал."],
+  "tarfile.CompressionError": ["tarfile Compression", "CompressionError упал."],
+  "tarfile.StreamError": ["tarfile Stream", "StreamError упал."],
+
+  "gzip.BadGzipFile": ["gzip BadGzip", "BadGzipFile упал."],
+
+  "bz2.BZ2Error": ["bz2 ошибка", "BZ2Error упал."],
+
+  "lzma.LZMAError": ["lzma ошибка", "LZMAError упал."],
+
+  "zlib.error": ["zlib ошибка", "zlib упал."],
+
+  "hashlib.Hash": ["hashlib Hash", "Hash упал."],
+
+  "hmac.HMAC": ["hmac HMAC", "HMAC упал."],
+
+  "secrets.SystemRandom": ["secrets System", "SystemRandom упал."],
+
+  "random.Random": ["random Random", "Random упал."],
+
+  "statistics.StatisticsError": ["statistics Statistics", "StatisticsError упал."],
+
+  "decimal.Decimal": ["decimal Decimal", "Decimal упал."],
+
+  "fractions.Fraction": ["fractions Fraction", "Fraction упал."],
+
+  "cmath.rect": ["cmath rect", "rect упал."],
+
+  "math.isfinite": ["math isfinite", "isfinite упал."],
+
+  "time.struct_time": ["time struct", "struct_time упал."],
+
+  "datetime.datetime": ["datetime datetime", "datetime упал."],
+
+  "datetime.date": ["datetime date", "date упал."],
+
+  "datetime.timedelta": ["datetime timedelta", "timedelta упал."],
+
+  "datetime.tzinfo": ["datetime tzinfo", "tzinfo упал."],
+
+  "calendar.Calendar": ["calendar Calendar", "Calendar упал."],
+
+  "locale.localeconv": ["locale localeconv", "localeconv упал."],
+
+  "gettext.translation": ["gettext translation", "translation упал."],
+
+  "argparse.ArgumentParser": ["argparse Parser", "ArgumentParser упал."],
+
+  "getopt.GetoptError": ["getopt Getopt", "GetoptError упал."],
+
+  "optparse.OptionParser": ["optparse Option", "OptionParser упал."],
+
+  "logging.Logger": ["logging Logger", "Logger упал."],
+
+  "logging.handlers.RotatingFileHandler": ["logging Rotating", "RotatingFileHandler упал."],
+
+  "logging.config.DictConfigurator": ["logging config", "DictConfigurator упал."],
+
+  "warnings.WarningMessage": ["warnings Warning", "WarningMessage упал."],
+
+  "traceback.TracebackException": ["traceback Traceback", "TracebackException упал."],
+
+  "pdb.Pdb": ["pdb Pdb", "Pdb упал."],
+
+  "profile.Profile": ["profile Profile", "Profile упал."],
+
+  "timeit.Timer": ["timeit Timer", "Timer упал."],
+
+  "unittest.TestCase": ["unittest TestCase", "TestCase упал."],
+
+  "doctest.DocTestRunner": ["doctest Runner", "DocTestRunner упал."],
+
+  "test.support.TestFailed": ["test support", "TestFailed упал."],
+
+  "typing.TypeVar": ["typing TypeVar", "TypeVar упал."],
+
+  "typing.Generic": ["typing Generic", "Generic упал."],
+
+  "typing.Protocol": ["typing Protocol", "Protocol упал."],
+
+  "typing.runtime_checkable": ["typing runtime", "runtime_checkable упал."],
+
+  "dataclasses.dataclass": ["dataclasses dataclass", "dataclass упал."],
+
+  "contextlib.contextmanager": ["contextlib contextmanager", "contextmanager упал."],
+
+  "functools.lru_cache": ["functools lru", "lru_cache упал."],
+
+  "itertools.chain": ["itertools chain", "chain упал."],
+
+  "collections.deque": ["collections deque", "deque упал."],
+
+  "collections.defaultdict": ["collections defaultdict", "defaultdict упал."],
+
+  "collections.namedtuple": ["collections namedtuple", "namedtuple упал."],
+
+  "collections.OrderedDict": ["collections OrderedDict", "OrderedDict упал."],
+
+  "collections.Counter": ["collections Counter", "Counter упал."],
+
+  "collections.ChainMap": ["collections ChainMap", "ChainMap упал."],
+
+  "heapq.heappush": ["heapq heappush", "heappush упал."],
+
+  "heapq.heappop": ["heapq heappop", "heappop упал."],
+
+  "bisect.bisect_left": ["bisect bisect_left", "bisect_left упал."],
+
+  "bisect.bisect_right": ["bisect bisect_right", "bisect_right упал."],
+
+  "array.array": ["array array", "array упал."],
+
+  "weakref.ref": ["weakref ref", "ref упал."],
+
+  "weakref.proxy": ["weakref proxy", "proxy упал."],
+
+  "types.SimpleNamespace": ["types SimpleNamespace", "SimpleNamespace упал."],
+
+  "copy.deepcopy": ["copy deepcopy", "deepcopy упал."],
+
+  "pprint.pformat": ["pprint pformat", "pformat упал."],
+
+  "reprlib.aRepr": ["reprlib aRepr", "aRepr упал."],
+
+  "numbers.Integral": ["numbers Integral", "Integral упал."],
+
+  "numbers.Rational": ["numbers Rational", "Rational упал."],
+
+  "numbers.Real": ["numbers Real", "Real упал."],
+
+  "numbers.Complex": ["numbers Complex", "Complex упал."],
+
+  "cmath.phase": ["cmath phase", "phase упал."],
+
+  "math.factorial": ["math factorial", "factorial упал."],
+
+  "time.time": ["time time", "time упал."],
+
+  "time.sleep": ["time sleep", "sleep упал."],
+
+  "datetime.now": ["datetime now", "now упал."],
+
+  "calendar.monthrange": ["calendar monthrange", "monthrange упал."],
+
+  "locale.getpreferredencoding": ["locale encoding", "getpreferredencoding упал."],
+
+  "gettext.gettext": ["gettext gettext", "gettext упал."],
+
+  "argparse.Namespace": ["argparse Namespace", "Namespace упал."],
+
+  "getopt.gnu_getopt": ["getopt gnu", "gnu_getopt упал."],
+
+  "optparse.Values": ["optparse Values", "Values упал."],
+
+  "logging.basicConfig": ["logging basic", "basicConfig упал."],
+
+  "logging.getLogger": ["logging getLogger", "getLogger упал."],
+
+  "warnings.warn": ["warnings warn", "warn упал."],
+
+  "traceback.format_exc": ["traceback format", "format_exc упал."],
+
+  "pdb.set_trace": ["pdb set_trace", "set_trace упал."],
+
+  "profile.run": ["profile run", "run упал."],
+
+  "timeit.timeit": ["timeit timeit", "timeit упал."],
+
+  "unittest.main": ["unittest main", "main упал."],
+
+  "doctest.testmod": ["doctest testmod", "testmod упал."],
+
+  "test.support.run_unittest": ["test run_unittest", "run_unittest упал."],
+
+  "typing.cast": ["typing cast", "cast упал."],
+
+  "typing.overload": ["typing overload", "overload упал."],
+
+  "typing.final": ["typing final", "final упал."],
+
+  "typing.Literal": ["typing Literal", "Literal упал."],
+
+  "typing.Annotated": ["typing Annotated", "Annotated упал."],
+
+  "typing.TypeAlias": ["typing TypeAlias", "TypeAlias упал."],
+
+  "typing.TypeGuard": ["typing TypeGuard", "TypeGuard упал."],
+
+  "typing.Self": ["typing Self", "Self упал."],
+
+  "typing.Never": ["typing Never", "Never упал."],
+
+  "typing.Any": ["typing Any", "Any упал."],
+
+  "typing.Union": ["typing Union", "Union упал."],
+
+  "typing.Optional": ["typing Optional", "Optional упал."],
+
+  "typing.List": ["typing List", "List упал."],
+
+  "typing.Dict": ["typing Dict", "Dict упал."],
+
+  "typing.Set": ["typing Set", "Set упал."],
+
+  "typing.FrozenSet": ["typing FrozenSet", "FrozenSet упал."],
+
+  "typing.Tuple": ["typing Tuple", "Tuple упал."],
+
+  "typing.Callable": ["typing Callable", "Callable упал."],
+
+  "typing.Iterator": ["typing Iterator", "Iterator упал."],
+
+  "typing.Iterable": ["typing Iterable", "Iterable упал."],
+
+  "typing.Sequence": ["typing Sequence", "Sequence упал."],
+
+  "typing.Mapping": ["typing Mapping", "Mapping упал."],
+
+  "typing.MutableMapping": ["typing MutableMapping", "MutableMapping упал."],
+
+  "typing.MutableSequence": ["typing MutableSequence", "MutableSequence упал."],
+
+  "typing.MutableSet": ["typing MutableSet", "MutableSet упал."],
+
+  "typing.AbstractSet": ["typing AbstractSet", "AbstractSet упал."],
+
+  "typing.ByteString": ["typing ByteString", "ByteString упал."],
+
+  "typing.Collection": ["typing Collection", "Collection упал."],
+
+  "typing.Container": ["typing Container", "Container упал."],
+
+  "typing.ItemsView": ["typing ItemsView", "ItemsView упал."],
+
+  "typing.KeysView": ["typing KeysView", "KeysView упал."],
+
+  "typing.ValuesView": ["typing ValuesView", "ValuesView упал."],
+
+  "typing.ContextManager": ["typing ContextManager", "ContextManager упал."],
+
+  "typing.AsyncContextManager": ["typing AsyncContextManager", "AsyncContextManager упал."],
+
+  "typing.Pattern": ["typing Pattern", "Pattern упал."],
+
+  "typing.Match": ["typing Match", "Match упал."],
+
+  "typing.ChainMap": ["typing ChainMap", "ChainMap упал."],
+
+  "typing.Counter": ["typing Counter", "Counter упал."],
+
+  "typing.Deque": ["typing Deque", "Deque упал."],
+
+  "typing.DefaultDict": ["typing DefaultDict", "DefaultDict упал."],
+
+  "typing.OrderedDict": ["typing OrderedDict", "OrderedDict упал."],
+
+  "typing.Type": ["typing Type", "Type упал."],
+
+  "typing.ClassVar": ["typing ClassVar", "ClassVar упал."],
+
+  "typing.Final": ["typing Final", "Final упал."],
+
+  "typing.ForwardRef": ["typing ForwardRef", "ForwardRef упал."],
+
+  "typing.ParamSpec": ["typing ParamSpec", "ParamSpec упал."],
+
+  "typing.TypeVarTuple": ["typing TypeVarTuple", "TypeVarTuple упал."],
+
+  "typing.Unpack": ["typing Unpack", "Unpack упал."],
+
+  "typing.Concatenate": ["typing Concatenate", "Concatenate упал."],
+
+  "typing.Required": ["typing Required", "Required упал."],
+
+  "typing.NotRequired": ["typing NotRequired", "NotRequired упал."],
+
+  "typing.ReadOnly": ["typing ReadOnly", "ReadOnly упал."],
+
+  "typing.dataclass_transform": ["typing dataclass_transform", "dataclass_transform упал."],
+
+  "typing.assert_type": ["typing assert_type", "assert_type упал."],
+
+  "typing.clear_overloads": ["typing clear_overloads", "clear_overloads упал."],
+
+  "typing.get_args": ["typing get_args", "get_args упал."],
+
+  "typing.get_origin": ["typing get_origin", "get_origin упал."],
+
+  "typing.get_type_hints": ["typing get_type_hints", "get_type_hints упал."],
+
+  "typing.is_typeddict": ["typing is_typeddict", "is_typeddict упал."],
+
+  "typing.no_type_check": ["typing no_type_check", "no_type_check упал."],
+
+  "typing.no_type_check_decorator": ["typing no_type_check_decorator", "no_type_check_decorator упал."],
+
+  "typing.reveal_type": ["typing reveal_type", "reveal_type упал."],
+
+  "typing.runtime_checkable": ["typing runtime_checkable", "runtime_checkable упал."],
+
+  "typing.overload": ["typing overload", "overload упал."],
+
+  "typing.final": ["typing final", "final упал."],
+
+  "typing.override": ["typing override", "override упал."]
+}
